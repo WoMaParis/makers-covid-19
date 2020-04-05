@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Open_Sans_sb';
+    src: url('./assets/fonts/OpenSans-Semibold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open_Sans_b';
+    src: url('./assets/fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open_Sans_xb';
+    src: url('./assets/fonts/OpenSans-ExtraBold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open_Sans_r';
+    src: url('./assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open_Sans_l';
+    src: url('./assets/fonts/OpenSans-Light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Open_Sans_xb, sans-serif;
+}
+strong{
+    font-family: Open_Sans_xb, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open_Sans", sans-serif;
+    background-color: #f9fbff;
+    font-size: 15px;
+}
+#root{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    background-image: url("/images/Volumes.png");
+    background-size: cover;
+    background-position: center;
+}
+#root::before{
+    content:"";
+    position: fixed;
+    display: block;
+    bottom: 0; top: 0; left: 0; right: 0;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.Hero{
+    padding: 3rem;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.Hero *{
+    position: relative;
+}
+.Hero--Title{
+    font-size: 40px;
+    line-height: 1.1;
+    font-family: "Open_Sans_xb", sans-serif;
+    text-transform: uppercase;
+}
+.Hero--Subtitle{
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: "Open_Sans_b", sans-serif;
+    text-transform: uppercase;
+}
+.Hero--Collectif img{
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+.Hero--Collectif .people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.Hero--Collectif .people img{
+    object-fit: unset;
+    border-radius: 10rem;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+ }
+
+.Actions{
+    position: relative;
+    width: 50%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f9fbff;
+
+}
+.Actions--Action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 0 2rem;
+}
+.Actions--Action:not(:first-child){
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+.Action--Illustration{
+    border-radius: 500rem;
+    padding: 2rem;
+}
+.Action--Text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.FCblue{
+    background-color: #263D8C !important;
+    color: white !important;
+}
+.FCred{
+    background-color: #E31D39 !important;
+    color: white !important;
+}
+.FCgreen{
+    background-color: #1AA056 !important;
+    color: white !important;
+}
+
+
+
+.Collectif{
+    position: relative;
+    width: 10%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.Collectif h2{
+    
+    position: relative;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    min-width: 25rem;
+    margin-bottom: 15rem;
+}
+.Collectif h2::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 3rem;
+    top: 0; bottom: 0;
+    left: -4rem;
+    position: absolute;
+    margin: auto;
+    background-color: black;
+}
+
+.Collectif a{
+    width: 80%;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Collectif a img{
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+}
+.Collectif .people img{
+    object-fit: unset;
+    border-radius: 10rem;
+    overflow: hidden;
+    height: 75px;
+    width: 75px;
+ }
+
+@media all { 
+ 
+    
+    .Hero {
+        height: 100%;
+    }
+    .Actions{
+        height: 100%;
+    }
+    
+} 
+@media all and (max-width: 1000px) { 
+#root{
+    background-attachment: fixed;
+    height: auto;
+    overflow-x: hidden;
+}
+
+    .Hero {
+        width: 100%;
+    }
+    .Actions{
+        width: 100%;
+        height: auto;
+       max-height: 100%;
+     }
+        
+    .Actions--Action{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Collectif{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+.Collectif a{
+    width: 50%;
+    padding: 2rem;
+}
+.Collectif h2{
+    transform: rotate(0deg);
+    margin: 2rem 0;
+    text-align: center;
+} 
+} 
