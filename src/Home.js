@@ -38,7 +38,7 @@ const HomepageLayout = () => (
                         Vous avez des besoins en matériel ?
                     </h3>
                     <p className={"Action--Description"}>
-                    Si vous avez ou connaissez des personnes ayant besoins de <strong> matériel en Ile-de-France, visières, masques</strong> ? Le matériel est fourni <strong>gratuitement et bénévolement</strong>, mais ne remplace pas un équipement médical certifié, c'est une solution d'urgence pour palier au manque ! 
+                    Si vous avez ou connaissez des personnes ayant besoin de <strong> matériel en Ile-de-France, visières, masques</strong> ? Le matériel est fourni <strong>gratuitement et bénévolement</strong>, mais ne remplace pas un équipement médical certifié, c'est une solution d'urgence pour palier au manque.
                     </p>
 
                     <Button as='a' className="ui icon left labeled button FCblue" href="https://docs.google.com/forms/d/e/1FAIpQLSedKR3azd_ObKBJHwCpZ91FkCRJw6Zmj98BAvR3AHdB5RdvIQ/viewform" target="_blank">
@@ -56,7 +56,7 @@ const HomepageLayout = () => (
                             Vous voulez  aider à fabriquer et à  produire  ? 
                         </h3>
                         <p className={"Action--Description"}>
-                            Vous êtes un particulier, uneéntreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuse laser, imprimantes 3D, machines à coudres...</strong>. Vous ne présentez aucun symptômes et n'êtes pas malade. Rejoignez le slack de coordination pour contribuer à la production ! 
+                            Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipé de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Vous ne présentez aucun symptôme et n'êtes pas malade. Rejoignez le slack de coordination pour contribuer à la production.
                         </p>
 
                     <Button as='a'  className="ui icon left labeled button FCred" href="https://join.slack.com/t/fabcityparis/shared_invite/zt-d8nqbwf8-4jAaXrZabzZhrll_xD7kNQ" target="_blank">
@@ -75,7 +75,7 @@ const HomepageLayout = () => (
                         Vous voulez soutenir le collectif ?
                     </h3>
                     <p className={"Action--Description"}>
-                        Nous mettons tous cela en oeuvre <strong>gratuitement et bénévolement</strong>, donc si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y <strong>aucun but lucratif à cette démarche !</strong>
+                        Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>, donc si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y <strong>aucun but lucratif à cette démarche.</strong>
                     </p>
 
 
