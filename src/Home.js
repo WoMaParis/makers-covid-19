@@ -90,7 +90,7 @@ const HomepageLayout = () => (
                         <h2>Le Collectif</h2>
                         <a href="https://woma.fr" target="_blank"><img alt="WoMa" src="https://i1.wp.com/store.fabcity.paris/wp-content/uploads/2018/06/Logo-WoMa@2x.png?ssl=1" /></a>
                         <a href="https://arslonga.fr/" target="_blank"><img alt="Ars Longa" src="https://arslonga.fr/wp-content/themes/arslongav2/assets/img/ars-longa-logo.png" /></a>
-                        <a href="https://http://volumesparis.org/" target="_blank"><img alt="Volumes" src="https://hallesciviques.org/wp-content/uploads/2019/11/logo-volumes.png" /></a>
+                        <a href="https://volumesparis.org/" target="_blank"><img alt="Volumes" src="https://hallesciviques.org/wp-content/uploads/2019/11/logo-volumes.png" /></a>
                         <a href="https://www.atelierdesamis.fr/" target="_blank"><img alt="Atelier des Amis" src="https://i.etsystatic.com/isla/3bcf3c/15987980/isla_fullxfull.15987980_6tmp58g7.jpg?version=0" /></a>
                         <a class="people" target="_blank"><img alt="Petru Gangura" src="https://ca.slack-edge.com/T33GH3Q68-UAE040G3B-8a5712044336-512" /></a>
                         <a href="https://www.homemakers.fr" target="_blank"><img alt="Homemakers" src="https://www.homemakers.fr/wp-content/uploads/2017/07/cropped-FOND_HOMEMAKERS_512_512-01.png" /></a>
