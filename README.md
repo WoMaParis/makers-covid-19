@@ -4,7 +4,7 @@
 
 Les makers d'ile-de-france se mobilisent pour produire du matériel sanitaire d’urgence.
 
-## Objectifs:
+## 🎯 Objectifs
 Ce micro-site à pour objectif de structurer et d'offrir une page unique pour l'organisation des makers d'Ile-de-Franceén réponse au risque sanitaire.
 Les objectifs sont :
 
@@ -16,7 +16,7 @@ Les objectifs sont :
 
 * 💵 Faire un appel aux dons, pour aider ceux qui participent à l'opération. Cette mission reste à but non-lucratif.
 
-## Collectif et remerciements 👏
+## 👏 Collectif et remerciements
 
 Cette action est possible grace à l'énergie de beaucoup d'organisations !
 
@@ -26,12 +26,12 @@ Et de beaucoup de personnes :
 
 Blanche Broquet, Yoann Bordes-Pages, Rémi Lapostolle, Minh Man Nguyen, Quentin Perchais, Zoé Moynot, Michael Araujo, Corentin Boiteau, Olia Synyakevych, Florence Bazin, Petru Gangura, Vincent Guimas, Gilles Bessard du Parc, Fournier Antonin, Cyrille Jaouan, Nathan Chateau, Frédéric Charloteaux, Nicolas Piffeteau, Adel Kheniche, Brice MARTIN, Grégoire SIMONNET, Aurélien DENAES, Marc ETCHE, Andy KWOK, Andreas Feron, Adrien Calvez, Antoine Boilevin, Johan Da Silvera, catherine schuwer, Didier JUVIN, Ludovic HAEHNSEN, Clement Duroselle, Thomas Demmer, Zélie Chomez, Virginie de Labarre, Fred Gnaore, Damien Cazeils, Marie Boussard, et d'autres...
 
-## À faire
+## ✅ À faire
 
 - [ ] Statut des commandes pour les demandeurs.
 - [ ] Relier à notre outil de gestion
 
-## Contribuer
+## 💌 Contribuer
 
 Pour toutes modifications, suggestions ou autres, contactez quentin@woma.fr
 
