@@ -5,7 +5,7 @@
 Les makers d'ile-de-france se mobilisent pour produire du matériel sanitaire d’urgence.
 
 ## 🎯 Objectifs
-Ce micro-site à pour objectif de structurer et d'offrir une page unique pour l'organisation des makers d'Ile-de-Franceén réponse au risque sanitaire.
+Ce micro-site à pour objectif de structurer et d'offrir une page unique pour l'organisation des makers d'Ile-de-France en réponse au risque sanitaire.
 Les objectifs sont :
 
 * 😷 Offrir une interface pour les personnes nécéssitant du materiel sanitaires de faire une demande et suivre l'état de la production.
@@ -29,7 +29,11 @@ Blanche Broquet, Yoann Bordes-Pages, Rémi Lapostolle, Minh Man Nguyen, Quentin 
 ## ✅ À faire
 
 - [ ] Statut des commandes pour les demandeurs.
-- [ ] Relier à notre outil de gestion
+- [ ] Page de présentations des organisations partenaires et des bénévoles.
+- [ ] Page de dons pour les matieres premieres.
+- [ ] Statistiques de productions.
+- [ ] Page pour les inititaives partenaires.
+- [ ] Relier à notre outil de gestion.
 
 ## 💌 Contribuer
 
