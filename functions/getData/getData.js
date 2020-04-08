@@ -1,4 +1,4 @@
-const { getVolunteers } = require('../sheetsAPI.js');
+const { getVolunteers } = require('./sheetsAPI.js');
 
 
 
