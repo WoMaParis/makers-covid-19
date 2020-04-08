@@ -6,7 +6,7 @@ import {Button} from 'semantic-ui-react'
     fetch("/.netlify/functions/getData")
         .then(response => response.json())
         .then(json => 
-            console.log(json)
+            // console.log(json)
             
             )
 })()
