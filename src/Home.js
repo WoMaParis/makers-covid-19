@@ -2,9 +2,9 @@ import React from 'react'
 import {Button} from 'semantic-ui-react'
 
 (async()=>{
-        let response = await fetch('/.netlify/functions/getData?volunteers=all');
+        let response = await fetch('/.netlify/functions/getData?organisations=all');
         response = await response.json();
-        // console.log(response);
+        console.log(response);
 
 })()
 

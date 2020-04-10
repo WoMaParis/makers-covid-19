@@ -1,4 +1,4 @@
-const { getVolunteers } = require('./sheetsAPI.js');
+const { getVolunteers, getOrganisations } = require('./sheetsAPI.js');
 
 
 
@@ -6,7 +6,7 @@ const { getVolunteers } = require('./sheetsAPI.js');
 exports.handler = async (event, context) => {
   const data = Object.keys(event.queryStringParameters)[0]
   const param = event.queryStringParameters[data];
-  console.log(`API request : ${data}(${param})`);
+  console.log(`API request ~~> ${data}(${param})`);
   
 
   try {
@@ -14,6 +14,9 @@ exports.handler = async (event, context) => {
     switch (data) {
       case 'volunteers':
         response = await getVolunteers(param);
+        break;
+      case 'organisations':
+        response = await getOrganisations(param);
         break;
       default:
         return { statusCode: 404, body: 'No API with this name' }
