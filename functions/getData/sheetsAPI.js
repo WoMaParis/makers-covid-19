@@ -46,7 +46,7 @@ const sheetsAPI = {
     // },
 
     // Returns an array of all the people listed in the 'Benevoles' Tab with names, pictureUrl, and mail
-    getVolunteers: async () => {
+    getVolunteers: async (param = 'all') => {
         const sheetLabel = "Bénévoles"; // Define name of the targeted sheet
         const dataLabels = {// Define header labels for targeted data
             name: "Nom",

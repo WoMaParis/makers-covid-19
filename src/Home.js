@@ -1,15 +1,12 @@
 import React from 'react'
 import {Button} from 'semantic-ui-react'
 
-// (async()=>{
+(async()=>{
+        let response = await fetch('/.netlify/functions/getData?volunteers=all');
+        response = await response.json();
+        // console.log(response);
 
-//     fetch("/.netlify/functions/getData")
-//         .then(response => response.json())
-//         .then(json => 
-//             // console.log(json)
-            
-//             )
-// })()
+})()
 
 const HomepageLayout = () => (
     <React.Fragment>
