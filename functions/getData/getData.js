@@ -1,4 +1,4 @@
-const { getVolunteers, getOrganisations } = require('./sheetsAPI.js');
+const { getVolunteers, getOrganisations, getOrders, getMilestones } = require('./sheetsAPI.js');
 
 
 
@@ -17,6 +17,12 @@ exports.handler = async (event, context) => {
         break;
       case 'organisations':
         response = await getOrganisations(param);
+        break;
+      case 'orders':
+        response = await getOrders(param);
+        break;
+      case 'milestones':
+        response = await getMilestones();
         break;
       default:
         return { statusCode: 404, body: 'No API with this name' }
