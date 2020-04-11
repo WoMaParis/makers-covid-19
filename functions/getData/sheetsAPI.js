@@ -58,11 +58,10 @@ const structureData = async(sheetLabel, labels, filter = 'all') => {
 const sheetsAPI = {
     // Returns an array of all the people listed in the 'Benevoles' Tab with names, pictureUrl, and mail
     getVolunteers: async (param = 'all') => {
-        const sheetLabel = "Bénévoles"; // Define name of the targeted sheet
+        const sheetLabel = "Volontaires"; // Define name of the targeted sheet
         const dataLabels = {// Define header labels for targeted data
             name: "Nom",
             mail: "Mail",
-            pictureUrl: "Photo"
         }
         // Get Structured and filterd data
         let volunteers = await structureData( sheetLabel, dataLabels, param ); 
@@ -76,10 +75,10 @@ const sheetsAPI = {
     getOrganisations: async (param = 'all') => {
         const sheetLabel = "Structure"; // Define name of the targeted sheet
         const dataLabels = {// Define header labels for targeted data
-            name: "NOM",
-            websiteUrl: "SITE",
-            logoUrl: "LOGO",
-            adress: "ADRESSE"
+            name: "Nom",
+            websiteUrl: "Site",
+            logoUrl: "Logo",
+            adress: "Adresse"
         }
         // Get Structured and filtered data
         let organisations = await structureData(sheetLabel, dataLabels, param);
