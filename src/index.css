@@ -152,61 +152,6 @@ body {
 
 
 
-.Collectif{
-    position: relative;
-    width: 10%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    animation: 10s ease-in infinite both scroll;
-
-}
-.Collectif h2{
-    
-    position: relative;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    min-width: 25rem;
-    margin-bottom: 15rem;
-}
-.Collectif h2::after{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 3rem;
-    top: 0; bottom: 0;
-    left: -4rem;
-    position: absolute;
-    margin: auto;
-    background-color: black;
-}
-
-.Collectif a{
-    width: 80%;
-    padding: 1rem;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-.Collectif a img{
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    width: 100%;
-    height: auto;
-    filter: grayscale(1);
-}
-.Collectif .people img{
-    object-fit: unset;
-    border-radius: 10rem;
-    overflow: hidden;
-    height: 75px;
-    width: 75px;
- }
 
 @media all { 
  

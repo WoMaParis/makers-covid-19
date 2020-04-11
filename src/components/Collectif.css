@@ -1,0 +1,93 @@
+
+.Collectif{
+    position: relative;
+    width: 10%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.Collectif__Title{ 
+    position: relative;
+    
+    height: auto;
+    margin: 2rem auto 4rem !important;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+}
+.Collectif__Title::after{
+    content: "";
+    display: block;
+    height: 3rem;
+    width: 3px;
+    left: 0; right: 0;
+    bottom: -3.5rem;
+    position: absolute;
+    margin: auto;
+    background-color: black;
+}
+
+.Collectif__Members{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Member{
+    width: 80%;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.Member .Member__Link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.Member .Member__Logo{
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    border-radius: 10px;
+}
+.Member .Member__Initials{
+    background-color: #ffffffab;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: Open_Sans_xb, sans-serif;
+    text-align: center;
+    padding: 1rem ;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+@media all and (max-width: 1000px) { 
+    
+    
+    .Collectif{
+        width: 100%;
+        height: auto;
+    }
+    
+    .Collectif__Title{ 
+        writing-mode: unset;
+    }
+    
+    .Collectif__Members{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Member{
+        width: 50%;
+        padding: 2rem;
+    }
+} 
