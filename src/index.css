@@ -1,30 +1,30 @@
 @font-face {
     font-family: 'Open_Sans_sb';
-    src: url('./assets/fonts/OpenSans-Semibold-webfont.woff') format('woff');
+    src: url('/fonts/OpenSans-Semibold-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open_Sans_b';
-    src: url('./assets/fonts/OpenSans-Bold-webfont.woff') format('woff');
+    src: url('/fonts/OpenSans-Bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open_Sans_xb';
-    src: url('./assets/fonts/OpenSans-ExtraBold-webfont.woff') format('woff');
+    src: url('/fonts/OpenSans-ExtraBold-webfont.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open_Sans_r';
-    src: url('./assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+    src: url('/fonts/OpenSans-Regular-webfont.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open_Sans_l';
-    src: url('./assets/fonts/OpenSans-Light-webfont.woff') format('woff');
+    src: url('/fonts/OpenSans-Light-webfont.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6{
 strong{
     font-family: Open_Sans_xb, sans-serif;
 }
-
 
 body {
     margin: 0;
@@ -162,6 +161,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: 10s ease-in infinite both scroll;
 
 }
 .Collectif h2{
@@ -256,3 +256,10 @@ body {
     text-align: center;
 } 
 } 
+
+
+@keyframes scrolly {
+  0% { transform: translateY(0); }
+  50%   { transform: translateY(-100%); }
+  100%   { transform: translateY(0%); }
+}
