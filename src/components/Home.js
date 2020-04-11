@@ -1,32 +1,17 @@
 import React from 'react'
 import {Button} from 'semantic-ui-react'
-import Collectif from './components/Collectif.js'
+import './Home.css'
 
-const HomepageLayout = () => (
-    <React.Fragment>
+const Home = (props) => (
 
-        <section className={"Hero section"}>
-            
-            <h1 className={"Hero--Title"}>
-                Covid-19 <br/>
-                Fabrication solidaire
-            </h1>
-            <h2 className={"Hero--Subtitle"}>
-                Les makers d'ile-de-france se mobilisent pour produire du matériel sanitaire d’urgence.
-            </h2>
-            <p className={"Hero--Text"}>
-                Grâce à l'énerge des differents acteurs d'Ile-de-France, particuliers, PME, associations, nous nous organisons en force de production distribuée pour fournir ceux qui en ont besoins.
-            </p>
-        </section>
-
-        <section className={"Actions section"}>
-            <div className={"Actions--Action Action"}>
-                {/* <img className={"Action--Illustration"} src="https://via.placeholder.com/150" /> */}
-                <div className={'Action--Text'}>
-                    <h3 className={"Action--Title"}>
+    <section className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Home`}>
+            <div className={"Home__Action Action"}>
+                {/* <img className={"Action__Illustration"} src="https://via.placeholder.com/150" /> */}
+                <div className={'Action__Text'}>
+                    <h3 className={"Action__Title"}>
                         Vous avez des besoins en matériel ?
                     </h3>
-                    <p className={"Action--Description"}>
+                    <p className={"Action__Description"}>
                     Si vous avez ou connaissez des personnes ayant besoin de <strong> matériel en Ile-de-France, visières, masques</strong> ? Le matériel est fourni <strong>gratuitement et bénévolement</strong>, mais ne remplace pas un équipement médical certifié, c'est une solution d'urgence pour pallier au manque.
                     </p>
 
@@ -36,13 +21,13 @@ const HomepageLayout = () => (
                     </Button>
                 </div>
             </div>
-                <div className={"Actions--Action Action"} >
-                {/* <img className={"Action--Illustration"} src="https://via.placeholder.com/150" /> */}
-                <div className={'Action--Text'}>
-                        <h3 className={"Action--Title"}>
+                <div className={"Home__Action Action"} >
+                {/* <img className={"Action__Illustration"} src="https://via.placeholder.com/150" /> */}
+                <div className={'Action__Text'}>
+                        <h3 className={"Action__Title"}>
                             Vous voulez  aider à fabriquer et à  produire  ? 
                         </h3>
-                        <p className={"Action--Description"}>
+                        <p className={"Action__Description"}>
                             Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipé de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Vous ne présentez aucun symptôme et n'êtes pas malade. Rejoignez le slack de coordination pour contribuer à la production.
                         </p>
 
@@ -53,13 +38,13 @@ const HomepageLayout = () => (
 
                     </div>
                 </div>
-                <div className={"Actions--Action Action"} >
-                {/* <img className={"Action--Illustration"} src="https://via.placeholder.com/150" /> */}
-                <div className={'Action--Text'}>
-                    <h3 className={"Action--Title"}>
+                <div className={"Home__Action Action"} >
+                {/* <img className={"Action__Illustration"} src="https://via.placeholder.com/150" /> */}
+                <div className={'Action__Text'}>
+                    <h3 className={"Action__Title"}>
                         Vous voulez soutenir le collectif ?
                     </h3>
-                    <p className={"Action--Description"}>
+                    <p className={"Action__Description"}>
                         Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>, donc si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y <strong>aucun but lucratif à cette démarche.</strong>
                     </p>
 
@@ -70,10 +55,6 @@ const HomepageLayout = () => (
                 </div>
             </div>
         </section>
-        <Collectif/>
-        
-
-    </React.Fragment>
 )
 
-export default HomepageLayout
+export default Home

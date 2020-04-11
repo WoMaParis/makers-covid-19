@@ -1,0 +1,59 @@
+
+
+.Hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("/images/Volumes.png");
+    background-size: cover;
+    background-position: center;
+    border: black solid 6px;
+}
+.Hero::before{
+    content:"";
+    position: absolute;
+    display: block;
+    bottom: 0; top: 0; left: 0; right: 0;
+    background-color: rgba(255,255,255,0.4);
+}
+.Hero *{
+    position: relative;
+}
+.Hero--Title{
+    font-size: 40px;
+    line-height: 1.1;
+    font-family: "Open_Sans_xb", sans-serif;
+    text-transform: uppercase;
+}
+.Hero--Subtitle{
+    font-size: 24px;
+    line-height: 1.1;
+    font-family: "Open_Sans_b", sans-serif;
+    text-transform: uppercase;
+}
+.Hero--Collectif img{
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+.Hero--Collectif .people{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.Hero--Collectif .people img{
+    object-fit: unset;
+    border-radius: 10rem;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+ }
+
+ 
+@media all and (max-width: 1000px) { 
+
+}
