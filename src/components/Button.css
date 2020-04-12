@@ -1,6 +1,7 @@
 .Button{
     position: relative;
     border: solid black var(--border-width);
+    background-color: white;
 }
 .Button a{
     display: block;
@@ -8,27 +9,33 @@
     font-size: 1rem;
     text-align: center;
     font-family: "Open_Sans_b", sans-serif;
+    position: relative;
+    z-index: 100;
 }
 .Button::after{
     content: '';
     display: block;
     position: absolute;
-    top: 0; left :0;
+    top: 0; right :0;
     height: 100%;
-    width: 0;
-    background: var(--color-accent);
-;
+    background: var(--color-accent-alt);
+    width: 100%;
     transition: var(--transition-fast);
     z-index: 1;
-}
-.Button:hover a{
-    position: relative;
-    z-index: 100;
 }
 .Button a:hover {
     opacity: 1 !important;
 }
 .Button:hover::after{
+    width: 0;
+}
+
+/* Inverted */
+
+.Button--Inverted:hover::after{
     width: 100%;
 }
 
+.Button--Inverted::after{
+    width: 0;
+}

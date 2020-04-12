@@ -5,8 +5,9 @@
     --color-blue: #263D8C;
     --color-red: #E31D39;
     --color-green: #1AA056;
-    /* --color-accent: #0d04f5; */
-    --color-accent: aquamarine;
+    --color-accent: #0d04f5;
+    --color-accent-alt: #fbd014;
+    /* --color-accent: aquamarine; */
     --transition-fast :  all 0.5s ease;
 
 }

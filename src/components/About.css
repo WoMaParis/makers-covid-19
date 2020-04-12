@@ -24,7 +24,7 @@
     left: -5%;
     width: 110%;
     height: 110%;
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-alt);
     mix-blend-mode: multiply;
     transition: var(--transition-fast);
 }

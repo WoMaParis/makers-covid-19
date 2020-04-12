@@ -19,7 +19,7 @@ const Menu = (props) => {
                     MakersCovid.paris apporte du matériel sanitaire d'urgence pour l'Ile-de-France.
                 </p>
                     
-                <Button className="Link__CTA">
+                <Button className="Link__CTA Button--Inverted">
                     <Link to="/about" >
                         Nous contacter !
                     </Link>
