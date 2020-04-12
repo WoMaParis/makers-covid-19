@@ -2,6 +2,7 @@
   "name": "makers-covid-19",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "dotenv": "^8.2.0",
     "google-spreadsheet": "^3.0.10",

@@ -22,7 +22,7 @@
 }
 .Link .Link__Title{
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-family: "Open_Sans_b", sans-serif;
     color: black;
@@ -58,7 +58,7 @@
 .Menu__Link  .Link__Title{ position: relative;}
 .Menu__Link  .Link__Title::before{
     position: absolute;
-    top: 2rem;
+    bottom: -0.5rem;
     width: 0;
     content: "";
     display: block;
@@ -107,8 +107,10 @@
         margin-top: 1rem !important; 
         margin-bottom: 1rem;
     }
-    .Menu__Link .Link__Title::before { top: 1.7rem; }
-    .Menu__Link .Link__Title { width: fit-content; }
+    .Menu__Link .Link__Title {
+        font-size: 1.7rem; 
+        width: fit-content;
+     }
 
 /* Opened Menu */
     .Menu.Menu--Open{ 
@@ -139,20 +141,23 @@
         width: 3rem;
         right: 0;
     }
-    .MobileToggle > div{  transition: var(--transition-fast); }
-    .Menu.Menu--Open .MobileToggle__Open, .Menu .MobileToggle__Close{ opacity: 0;}
-    .Menu.Menu--Open .MobileToggle__Close, .Menu .MobileToggle__Open{ opacity: 100; }
 
 
 /* Toggle buttons */
-    .MobileToggle__Open, 
-    .MobileToggle__Open::before,
-    .MobileToggle__Open::after {
+    .MobileToggle__Toggle, 
+    .MobileToggle__Toggle::before,
+    .MobileToggle__Toggle::after {
         position: absolute;
         margin: auto;
         background-color: black;
         height: var(--border-width);
-    }.MobileToggle__Open {
+        content: '';
+        display: block;
+        transition: var(--transition-fast);
+    }
+    
+    /* Open */
+    .MobileToggle__Toggle {
         margin: auto auto;
         left: 0;
         right: 0;
@@ -160,17 +165,37 @@
         bottom: 0;
         width: 100%;
     }
-    .MobileToggle__Open::before {
-        content: '';
-        display: block;
-        top: -1rem;
+    .MobileToggle__Toggle::before {
+        transform: translateY(-1rem);
+        right: 0rem;
         width: 60%;
     }
-    .MobileToggle__Open::after {
-        content: '';
-        display: block;
-        bottom: -1rem;
+    .MobileToggle__Toggle::after {
+        transform: translateY(1rem);
+        right: 0rem;
         width: 60%;
+    }
+
+    /* Close */
+    .Menu.Menu--Open .MobileToggle__Toggle {
+        height: 0;
+    }
+
+    .Menu.Menu--Open .MobileToggle__Toggle::before {
+        right: 0rem;
+        left: 0rem;
+        top: 0rem;
+        bottom: 0rem;
+        width: 100%;
+        transform: rotate(-45deg) ;
+    }
+    .Menu.Menu--Open .MobileToggle__Toggle::after {
+        right: 0rem;
+        left: 0rem;
+        top: 0rem;
+        bottom: 0rem;
+        width: 100%;
+        transform: rotate(45deg) ;
     }
 
     

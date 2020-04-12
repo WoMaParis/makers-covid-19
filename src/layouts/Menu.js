@@ -45,9 +45,9 @@ const Menu = (props) => {
                 </p>
             </Link>
             <Link to="/help" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'help' ? 'Menu__Link--active':''}`}>
-                <h2 className="Link__Title">Aider</h2>
+                <h2 className="Link__Title">Donner</h2>
                 <p className="Link__Description">
-                    Vous voulez aider le collectifs dans ses activités, que ce soit financièrement ou à l'aide de vos ressources.
+                    Vous voulez aider le collectifs dans ses activités à travers un don, qu'il soit financier ou de la matiere premiere.
                 </p>
             </Link>
             <Link to="/about" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'about' ? 'Menu__Link--active' : ''}`}>
@@ -57,8 +57,7 @@ const Menu = (props) => {
                 </p>
             </Link>
             <div className={`MobileToggle`} onClick={() => { setMenuOpen(!menuOpen) }}>
-                <div className={`MobileToggle__Open`} ></div>
-                <div className={`MobileToggle__Close`} ></div>
+                <div className={`MobileToggle__Toggle`} ></div>
             </div>
         </nav>
 

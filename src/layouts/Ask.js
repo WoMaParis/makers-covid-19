@@ -34,16 +34,11 @@ const Ask = (props) => (
                     Aujourd'hui nous sommes en capacité de produire :
             </div>
                 <ul className={"Section__List"}>
-                    <li><strong>Des visière de protection</strong>- 1000 u/jour - cout 5€/u</li>
-                    <li><strong>Des masques en tissus</strong>- 1000 u/jour - cout 1€/u</li>
-                    <li><strong>Des adaptateurs</strong>- 1000 u/jour - cout 5€/u</li>
-                    <li><strong>Des surblouses</strong>- 1000 u/jour - cout 5€/u</li>
+                    <li><strong>Des visière de protection</strong>- 1000 u/jour</li>
+                    <li><strong>Des masques en tissus</strong>- 1000 u/jour</li>
+                    <li><strong>Des adaptateurs</strong>- 1000 u/jour</li>
+                    <li><strong>Des surblouses</strong>- 1000 u/jour</li>
                 </ul>
-            </div>
-            <div className={"Section"}>
-                <h3 className={"Section__Title"}>
-                    Prix et contribution
-                </h3>
                 <div className={"Section__Text"}>
                     Le matériel est fourni à <strong>titre gracieux par le collectif</strong> grâce aux efforts de tous les membres, particuliers, entreprise et associations, <strong>si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
                 </div>

@@ -49,6 +49,9 @@ a:hover{  opacity: 0.9 !important;  }
 .Section{
     padding: var(--gap-size);
 }
+.Section__Text:not(:first-child){
+    margin-top: 1rem;
+}
 .Section__Action{
     margin-top: 1rem;
 }

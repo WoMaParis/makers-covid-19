@@ -1,11 +1,15 @@
-.Help{
-        width: 100%;
+.Help__Materials{
+    width: 50%;
+}
+.Help__HelloAsso{
+    width: 50%;
+    border: 0;
 }
 
 @media all and (max-width: 1000px) {
 
-    .Help{
-        width: 100%;
+    .Help__HelloAsso{
+        height: 80vh !important;
      }
         
 }
