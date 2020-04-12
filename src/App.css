@@ -1,6 +1,7 @@
 #root{
     height: 100%;
     width: 100vw;
+    background-color: var(--color-accent);
     background-image: url("/images/MxC19_Background.png");
     background-size: cover;
     background-position: center;
@@ -9,25 +10,28 @@
 
 .Layout{
     padding: var(--gap-size);
-    height: calc(100% - var(--gap-size)); 
-    width: calc(100% - var(--gap-size)); 
-    display: grid;
-    gap: var(--gap-size);
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas: 
-        "menu menu"
-        "hero content"
-}
-.Layout__Hero, .Layout__Content, .Layout__Menu{  
-    margin: 0;
-    padding: var(--gap-size);
     height: 100%; 
     width: 100%; 
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% var(--gap-size) calc(90% - var(--gap-size));
+    grid-template-areas: 
+        "menu menu"
+        ". ."
+        "content content"
+}
+.Layout__Content, .Layout__Menu{  
+    margin: 0;
     background-color: white;
     border: black solid var(--border-width);
 }
-.Layout__Hero{ grid-area: hero;}
+.Layout__Content{
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    
+}
 .Layout__Content{  grid-area: content; }
 .Layout__Menu{  grid-area: menu; }
 

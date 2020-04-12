@@ -28,8 +28,15 @@ const Collectif = () => {
 
   return (
     <section className={"Collectif section"}>
-      <h2 className={'Collectif__Title'}>Le Collectif</h2>
-      <div className={`Collectif__Members ${loading ? 'loading' : 'loaded'}`}>
+      <div className={'Collectif__Header'}>
+        <h3 className={"Header__Title"}>
+          Le Collectif
+        </h3>
+        <div className={"Header__Intro"}>
+          Toutes les structures et organisations, petites ou grandes, qui contribuent à faire fonctionner ce mode de production.
+        </div>
+      </div>
+      <div className={`Collectif__Members ${loading ? 'Collectif__Members--Loading' : ''}`}>
 
         {organisations.map((el, i) => {
           

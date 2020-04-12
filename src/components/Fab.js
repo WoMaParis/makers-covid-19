@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Map from './Map.js'
+import Fabers from './Fabers.js'
 import './Fab.css'
 
 const Fab = (props) => (
 
-    <section className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Fab`}>
-            Fab
-    </section>
+
+    <Fragment>
+
+        <Map className={'Map'} />
+        <Fabers className={'Fabers'} />
+
+    </Fragment>
 )
 
 export default Fab

@@ -1,4 +1,5 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
+const MapboxClient = require('mapbox')
 const arrayShuffler = require('./arrayShuffler.js');
 const columnsIds = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK", "AL", "AM", "AN", "AO", "AP", "AQ", "AR", "AS", "AT", "AU", "AV", "AW", "AX", "AY", "AZ", "BA", "BB", "BC", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BK", "BL", "BM", "BN", "BO", "BP", "BQ", "BR", "BS", "BT", "BU", "BV", "BW", "BX", "BY", "BZ"];
 
@@ -6,6 +7,9 @@ const columnsIds = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", 
 // spreadsheet key is the long id in the sheets URL
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
 doc.useApiKey(process.env.GOOGLE_SHEET_API_KEY);
+
+// Initialize mapBox api
+let client = new MapboxClient(process.env.REACT_APP_MAPBOX_TOKEN);
 
 
 // Organize the data according to the freezed rows, omly taking into account the last header
@@ -81,10 +85,27 @@ const sheetsAPI = {
             adress: "Adresse"
         }
         // Get Structured and filtered data
-        let organisations = await structureData(sheetLabel, dataLabels, param);
+        let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];
+
+        for (const organisation of organisations) {
+            // Get coordinates for each adress
+            let coordinates = [];
+            coordinates = await client.geocodeForward(organisation.adress !== null ? organisation.adress : "paris");
+            coordinates = coordinates.entity.features[0].center;
+
+            let extendedOrganisation = {
+                name: organisation.name,
+                adress: organisation.adress,
+                coordinates: coordinates,
+                websiteUrl: organisation.websiteUrl,
+                logoUrl: organisation.logoUrl
+            };
+            extendedOrganisations.push(extendedOrganisation)
+        };
+
 
         // Shuffle array to display differnt peopel first
-        return arrayShuffler(organisations)
+        return arrayShuffler(extendedOrganisations)
     },
 
     // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl

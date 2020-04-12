@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Home from './components/Home.js';
-import Hero from './components/Hero.js';
 import Menu from './components/Menu.js';
 import Ask from './components/Ask.js';
 import Fab from './components/Fab.js';
@@ -11,11 +10,10 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 
 
 const App = (props) => {
-
+  
   return (
     <Router>
     <div className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Layout`}>
-      <Hero className={'Layout__Hero'}/>
       <Menu className={'Layout__Menu'}/>
         <div className={'Layout__Content'}>
           <Route path="/" exact component={Home} />

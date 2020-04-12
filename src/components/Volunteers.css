@@ -1,29 +1,29 @@
 
-.Collectif{
+.Volunteers{
     position: relative;
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 45%;
     overflow: hidden;
 
 }
-.Collectif__Header{
+.Volunteers__Header{
     padding: var(--gap-size);
+    border-top: black solid var(--border-width);
     border-bottom: black solid var(--border-width);
-    height: 20%;
     display: flex;
+    height: 20%;
     flex-direction: column;
     justify-content: center;
 }
-.Collectif__Title{ 
+.Volunteers__Title{ 
     position: relative;
-    
     height: auto;
     margin: 2rem auto 4rem !important;
 }
-.Collectif__Members{
+.Volunteers__Volunteers{
     width: 100%;
     height: 80%;
-    padding: var(--border-width);
+    padding: var(--gap-size);
     display: flex;
     align-items: center;
     overflow-y: scroll;
@@ -33,7 +33,7 @@
     position: relative;
 }
 
-.Collectif__Members::after{
+.Volunteers__Volunteers::after{
     content: '';
     display: block;
     position: absolute;
@@ -45,58 +45,25 @@
     left: 0;
     transition: var(--transition-fast);
 }
-.Collectif__Members--Loading::after{
+.Volunteers__Volunteers--Loading::after{
     height: 100%;
 }
 
-
-.Member{
-    width: 16.6%;
-    padding: 1rem;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-    position: relative;
+.Volunteer{
+    margin-right: 0.5rem;
 }
-.Member .Member__Link{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-}
-.Member .Member__Logo{
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    width: 100%;
-    height: auto;
-    filter: grayscale(1);
-    border-radius: 10px;
-}
-.Member .Member__Initials{
-    background-color: #ffffffab;
-    width: 100%;
-    text-transform: uppercase;
-    font-family: Open_Sans_xb, sans-serif;
-    text-align: center;
-    padding: 1rem ;
-    border-radius: 10px;
-    display: block;
-}
-
 
 
 @media all and (max-width: 1000px) { 
     
     
-    .Collectif{
+    .Volunteers{
         width: 100%;
         height: auto;
     }
     
     
-    .Collectif__Members{
+    .Volunteers__Members{
         flex-direction: row;
         flex-wrap: wrap;
     }
