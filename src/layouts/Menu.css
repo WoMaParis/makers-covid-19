@@ -1,0 +1,202 @@
+.Menu{
+    position: absolute;
+    height: 10%;
+    width: calc(100% - 2 * var(--gap-size));
+    display: flex;
+    padding: var(--gap-size);
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    transition: var(--transition-fast);
+    z-index: 10000;
+    overflow: hidden;
+}
+.Link{
+    display: block;
+    padding-left: 2rem;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Link .Link__Title{
+    margin: 0;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: "Open_Sans_b", sans-serif;
+    color: black;
+}
+
+.Menu__Link .Link__Description,
+.Menu .Link__CTA{
+    margin-top: 1.5rem;
+    display: none;
+}
+
+.Menu__Link{
+    position: relative;
+    justify-content: flex-start;
+}
+.Link:first-child {
+    padding-left:0;
+}
+.Link:first-child .Link__Title{
+    font-size: 1.8rem;
+    padding-right: 5rem;
+    font-family: "Open_Sans_xb", sans-serif;
+}
+.Link:first-child .Link__Description{
+    line-height: 1.1;
+    font-family: "Open_Sans_b", sans-serif;
+    text-transform: uppercase;
+
+}
+ 
+/* Hover on links */
+
+.Menu__Link  .Link__Title{ position: relative;}
+.Menu__Link  .Link__Title::before{
+    position: absolute;
+    top: 2.5rem;
+    width: 0;
+    content: "";
+    display: block;
+    height: var(--border-width);
+    border-bottom: solid black var(--border-width);
+    transition: var(--transition-fast);
+}
+.Menu__Link:not(:first-child):hover  .Link__Title::before,
+.Menu__Link--active  .Link__Title::before{width: 100%; }
+ 
+/* Mega-menu */
+@media all and (min-width: 1000px) { 
+    .Menu:hover{
+        height: 30%;
+        background-color: var(--color-accent-alt);
+    }
+    .Menu:hover .Link__Description,
+    .Menu:hover .Link__CTA {
+        display: block;
+    }
+}
+
+ /* Hide toggle on desktop */
+.MobileToggle, .Link--Mobile{     display: none; }
+@media all and (max-width: 1000px) { 
+    .MobileToggle, .Link--Mobile{display: unset;} 
+    .Link--Desktop{display: none;}
+}
+
+@media all and (max-width: 1000px) { 
+    
+    .Menu{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+    }
+
+    .Link:not(:first-child){display: none; }
+    .Link:first-child .Link__Title { padding-right: 0;}
+    .Menu__Link{
+        width: 80%;
+        justify-content: center;
+    }
+    .Menu__Link .Link__Description, .Menu .Link__CTA{
+        margin-top: 0.5rem !important; 
+        margin-bottom: 1rem;
+    }
+    .Menu__Link .Link__Title::before { top: 1.7rem; }
+    .Menu__Link .Link__Title { width: fit-content; }
+
+/* Opened Menu */
+    .Menu.Menu--Open{ 
+        height: calc(100vh - 2 * var(--gap-size)); 
+        background-color: var(--color-accent-alt);
+    }
+    .Menu.Menu--Open .Menu__Link{ justify-content: unset; }
+    .Menu.Menu--Open .Link:not(:first-child){
+        display: block;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    
+    .Menu.Menu--Open .Link__Description,
+    .Menu.Menu--Open .Link__CTA {
+        display: block;
+    }
+
+/* Toggle view */
+    .MobileToggle{
+        position: absolute;
+        margin: 1rem;
+        height: calc(var(--menu-height) - 2rem - 2 * var(--border-width) );
+        top: 0;
+        width: 3rem;
+        right: 0;
+    }
+    .MobileToggle > div{  transition: var(--transition-fast); }
+    .Menu.Menu--Open .MobileToggle__Open, .Menu .MobileToggle__Close{ opacity: 0;}
+    .Menu.Menu--Open .MobileToggle__Close, .Menu .MobileToggle__Open{ opacity: 100; }
+
+
+/* Toggle buttons */
+    .MobileToggle__Open, 
+    .MobileToggle__Open::before,
+    .MobileToggle__Open::after {
+        position: absolute;
+        margin: auto;
+        background-color: black;
+        height: var(--border-width);
+    }.MobileToggle__Open {
+        margin: auto auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .MobileToggle__Open::before {
+        content: '';
+        display: block;
+        top: -1rem;
+        width: 60%;
+    }
+    .MobileToggle__Open::after {
+        content: '';
+        display: block;
+        bottom: -1rem;
+        width: 60%;
+    }
+
+    
+    .MobileToggle__Close {
+        position: absolute;
+        margin: auto auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+    }
+    .MobileToggle__Close::before,
+    .MobileToggle__Close::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: var(--border-width);
+        transform: rotate(45deg);
+    }
+    .MobileToggle__Close::after {
+        content: '';
+        display: block;
+        width: 100%;
+        transform: rotate(-45deg);
+    }
+
+    
+}

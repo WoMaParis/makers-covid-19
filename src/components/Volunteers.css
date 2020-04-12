@@ -1,39 +1,11 @@
 
 .Volunteers{
     position: relative;
-    width: 100%;
-    height: 45%;
-    overflow: hidden;
+    height: 100%;
 
 }
-.Volunteers__Header{
-    padding: var(--gap-size);
-    border-top: black solid var(--border-width);
-    border-bottom: black solid var(--border-width);
-    display: flex;
-    height: 20%;
-    flex-direction: column;
-    justify-content: center;
-}
-.Volunteers__Title{ 
-    position: relative;
-    height: auto;
-    margin: 2rem auto 4rem !important;
-}
-.Volunteers__Volunteers{
-    width: 100%;
-    height: 80%;
-    padding: var(--gap-size);
-    display: flex;
-    align-items: center;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-}
 
-.Volunteers__Volunteers::after{
+.Volunteers::after{
     content: '';
     display: block;
     position: absolute;
@@ -45,30 +17,10 @@
     left: 0;
     transition: var(--transition-fast);
 }
-.Volunteers__Volunteers--Loading::after{
+.Volunteers--Loading::after{
     height: 100%;
 }
 
 .Volunteer{
     margin-right: 0.5rem;
 }
-
-
-@media all and (max-width: 1000px) { 
-    
-    
-    .Volunteers{
-        width: 100%;
-        height: auto;
-    }
-    
-    
-    .Volunteers__Members{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .Member{
-        width: 50%;
-        padding: 2rem;
-    }
-} 

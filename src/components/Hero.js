@@ -5,6 +5,7 @@ import './Hero.css';
 const Hero = (props) => {
 
     const [milestones, setMilestones] = useState([]);
+    const [Loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -13,15 +14,14 @@ const Hero = (props) => {
                 milestones = await fetch('/.netlify/functions/getData?milestones=all');
                 milestones = await milestones.json();
 
-                milestones = milestones.filter((el)=>(['Unités produites', 'Lieux de fabrication','Volontaires'].includes(el.unit)))
-                console.log(milestones);
-                
+                milestones = milestones.filter((el)=>(['Unités produites', 'Lieux de fabrication','Volontaires'].includes(el.unit)))                
 
             } catch (error) {
                 console.log(error);
             };
 
             setMilestones(milestones);
+            setLoading(false);
         };
 
         fetchData();
@@ -38,11 +38,11 @@ const Hero = (props) => {
             <h2 className={"Hero__Subtitle"}>
                 Les makers d'ile-de-france se mobilisent pour produire du matériel sanitaire d’urgence.
             </h2>
-            <ul className={'Hero__Milestones'}>
+            <ul className={`Hero__Milestones ${Loading ? 'Hero__Milestones--Loading' : ''}`}>
 
                 {milestones.map((el, i) => {
                     return(
-                    <li key={i} className={'Milestone'}>
+                        <li key={i} className={'Milestone'}>
                         <span className={'Milestone__Icon'}>{el.icon}</span>
                         <span className={'Milestone__Number'}>{el.value}</span>
                         <span className={'Milestone__Descriptif'}>{el.unit}</span>

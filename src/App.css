@@ -1,6 +1,9 @@
 #root{
-    height: 100%;
+    
+    position: absolute;
+    height: 100vh;
     width: 100vw;
+    overflow: hidden;
     background-color: var(--color-accent);
     background-image: url("/images/MxC19_Background.png");
     background-size: cover;
@@ -9,37 +12,69 @@
 }
 
 .Layout{
-    padding: var(--gap-size);
-    height: 100%; 
-    width: 100%; 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 10% var(--gap-size) calc(90% - var(--gap-size));
-    grid-template-areas: 
-        "menu menu"
-        ". ."
-        "content content"
+    height: 100vh; 
+    width: 100vw; 
 }
-.Layout__Content, .Layout__Menu{  
-    margin: 0;
+.Layout__Content, .Layout__Menu{
+    margin: var(--gap-size);
     background-color: white;
     border: black solid var(--border-width);
 }
+.Layout__Menu{
+    top:  0;
+    left:  0;
+    right:  0;
+    width: calc(100% - 2 * var(--gap-size) );
+    height: var(--menu-height);
+}
+
 .Layout__Content{
-    height: 100%; 
-    width: 100%; 
+    width: calc(100% - 2 * var(--gap-size) );
+    margin-top: calc(var(--menu-height) + 2 * var(--gap-size) );
+    height: calc(100% - var(--menu-height) - 3 * var(--gap-size));
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
 }
-.Layout__Content{  grid-area: content; }
-.Layout__Menu{  grid-area: menu; }
+.Layout__Content > * {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.Layout__Content > *:not(:last-child) {
+    border-right: solid black var(--border-width);
+}
+
 
 @media all and (max-width: 1000px) { 
     #root{
-        background-attachment: fixed;
         height: auto;
         overflow-x: hidden;
     }
 
+@media all and (max-width: 1000px) {
+
+    .Layout{    
+        height: auto;
+    }
+    .Layout__Content{
+        flex-direction: column;
+     }
+     
+    .Layout__Content > * {
+        height: auto;
+        min-height: 400px;
+        width: 100%;
+    }
+    .Layout__Content > *:not(:last-child) {
+        border-right: 0;
+        border-bottom: solid black var(--border-width);
+    }
+
+
+
+}
 }

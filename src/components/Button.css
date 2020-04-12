@@ -2,6 +2,7 @@
     position: relative;
     border: solid black var(--border-width);
     background-color: white;
+    width: fit-content;
 }
 .Button a{
     display: block;

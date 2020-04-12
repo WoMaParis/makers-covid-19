@@ -81,7 +81,11 @@ return(
                             {organisation.organisation.logoUrl && (<img src={organisation.organisation.logoUrl} alt="illustration" />)}
                             <h2>{organisation.organisation.name}</h2>
                         </div>
-                    {organisation.organisation.websiteUrl && (<Button><a href={organisation.organisation.websiteUrl}>Voir le site</a></Button>)}
+                    {organisation.organisation.websiteUrl && (
+                    <Button>
+                        <a href={organisation.organisation.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
+                        </Button>
+                    )}
 
                     </Popup>
                 )}

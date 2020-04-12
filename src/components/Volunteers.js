@@ -27,24 +27,14 @@ const Volunteers = () => {
 
 
   return (
-    <section className={"Volunteers section"}>
-      <div className={'Volunteers__Header'}>
-        <h3 className={"Header__Title"}>
-          Les Volontaires
-        </h3>
+    <section className={`Volunteers Section ${loading ? 'Volunteers--Loading' : ''}`}>
+      <h3 className={"Section__Title"}>
+        Les Volontaires
+      </h3>
+      <div className={`Section__Text`}>
+          {volunteers.map((el, i) => (<span key={i} className={'Volunteer'}>{el.name}, </span>))}
       </div>
-      <div className={`Volunteers__Volunteers ${loading ? 'Volunteers__Volunteers--Loading' : ''}`}>
-
-        {volunteers.map((el, i) => {
-          
-          return( 
-            <span key={i} className={'Volunteer'}>{el.name}, </span>
-            )
-      }
-        )}
-       </div>
     </section>
-
   )
 }
 

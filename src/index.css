@@ -7,11 +7,22 @@
     --color-green: #1AA056;
     --color-accent: #0d04f5;
     --color-accent-alt: #fbd014;
-    /* --color-accent: aquamarine; */
+    --menu-height: 90px;
     --transition-fast :  all 0.5s ease;
-
+    font-size: 15px;
 }
 
+
+
+@media all and (max-width: 1000px) {
+
+    :root{
+        --gap-size: 1rem;
+        --border-width: 4px;
+    font-size: 12px;
+    }
+
+}
 h1, h2, h3, h4, h5, h6{
     font-family: Open_Sans_xb, sans-serif;
     text-transform: uppercase;
@@ -23,8 +34,68 @@ strong{
 body {
     font-family: "Open_Sans", sans-serif;
     background-color: #f9fbff;
-    font-size: 15px;
 }
 
 a{  color: inherit !important;  }
 a:hover{  opacity: 0.9 !important;  }
+
+.Section{
+    padding: var(--gap-size);
+}
+.Section__Action{
+    margin-top: 1rem;
+}
+.Section:not(:first-child){
+    border-top : solid black var(--border-width)
+}
+
+.Section__List{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.Section__List li{
+    margin-left: 1.5rem;
+    position: relative;
+}
+.Section__List li:before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: -1.5rem;
+    top: 0.8rem;
+    border-bottom: solid 1px black;
+    width: 1rem;
+}
+
+
+.Section--CTA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-accent-alt);
+}
+.Section--CTA > *{
+    margin: 0;
+}
+
+
+.Simple__Link{
+    position: relative;
+}
+.Simple__Link::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background-color: var(--color-accent-alt);
+    mix-blend-mode: multiply;
+    transition: var(--transition-fast);
+}
+.Simple__Link:hover::after{
+    width: 0%;
+}

@@ -1,0 +1,16 @@
+.Ask__Informations{
+    width: 50%;
+}
+.Ask__Form{
+    width: 50%;
+    border: 0 !important;
+}
+
+
+@media all and (max-width: 1000px) {
+
+    .Ask__Form{
+    height: 80vh !important;
+     }
+        
+}

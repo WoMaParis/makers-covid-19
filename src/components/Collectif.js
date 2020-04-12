@@ -27,30 +27,34 @@ const Collectif = () => {
 
 
   return (
-    <section className={"Collectif section"}>
-      <div className={'Collectif__Header'}>
-        <h3 className={"Header__Title"}>
+    <section className={`Collectif Section ${loading ? 'Collectif--Loading' : ''}`}>
+        <h3 className={"Section__Title"}>
           Le Collectif
         </h3>
-        <div className={"Header__Intro"}>
+        <div className={"Section__Text"}>
           Toutes les structures et organisations, petites ou grandes, qui contribuent à faire fonctionner ce mode de production.
         </div>
-      </div>
-      <div className={`Collectif__Members ${loading ? 'Collectif__Members--Loading' : ''}`}>
+      <div className={`Collectif__Members Section__Text`}>
 
         {organisations.map((el, i) => {
           
           return( 
             <div key={i} className={'Member'}>
-              <a className={'Member__Link'} href={el.websiteUrl} target="_blank" rel="noopener noreferrer"></a>
+              {el.websiteUrl === null ?
+                (<span className={'Member__Link'}>{el.name}</span>)
+                :
+                (<a className={'Member__Link'} href={el.websiteUrl} target="_blank" rel="noopener noreferrer">{el.name}</a>)
+              }
+
+
+
               {el.logoUrl === null ?
                 (<span className={'Member__Initials'} > {el.name.slice(0,2)} </span>)
                 : 
                 (<img className={'Member__Logo'} alt={el.name} src={el.logoUrl} />)
               }
             </div>
-            )
-      }
+            )}
         )}
        </div>
     </section>

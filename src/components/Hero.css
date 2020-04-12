@@ -1,81 +1,66 @@
 .Hero{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end !important;
     background-image: url("/images/Volumes.png");
     background-size: cover;
     background-position: center;
-    border-right: black solid var(--border-width);
-    padding: var(--gap-size);
-    width: 40%;
 }
 .Hero::before{
+    background-color: rgba(255,255,255,0.4);
     content:"";
     position: absolute;
     display: block;
     bottom: 0; top: 0; left: 0; right: 0;
-    background-color: rgba(255,255,255,0.4);
 }
 .Hero *{
     position: relative;
 }
+
+
 .Hero__Title{
-    font-size: 40px;
+    font-size: 2.3rem;
     line-height: 1.1;
     font-family: "Open_Sans_xb", sans-serif;
     text-transform: uppercase;
+    padding: var(--gap-size);
+    margin: 0;
+
 }
 .Hero__Subtitle{
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.1;
     font-family: "Open_Sans_b", sans-serif;
     text-transform: uppercase;
+    padding: var(--gap-size);
+    margin: 0;
+
 }
-.Hero__Collectif img{
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    width: 100%;
-    height: 100%;
-}
-.Hero__Collectif .people{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-.Hero__Collectif .people img{
-    object-fit: unset;
-    border-radius: 10rem;
-    overflow: hidden;
-    height: 50px;
-    width: 50px;
- }
 
 .Hero__Milestones{
     border-top: black solid var(--border-width);
-    margin-top: 1rem;
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    padding: var(--gap-size);
+    margin: 0;
+    width: 100%;
+    transition: var(--transition-fast);
+}
+
+.Milestone:not(:first-child){
+    padding-top: 2rem;
+}
+
+.Hero__Milestones--Loading{
+    width: 0;
 }
 .Milestone{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     text-transform: uppercase;
-    font-size: 25px;
-    padding-top: 2rem;
+    font-size: 1.3rem;
 }
 .Milestone__Number{
     margin-left: 1rem;
     margin-right: 1rem;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Open_Sans_xb", sans-serif;
-}
-
-
-@media all and (max-width: 1000px) { 
-
 }
