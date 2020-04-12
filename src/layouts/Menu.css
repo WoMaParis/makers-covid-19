@@ -58,7 +58,7 @@
 .Menu__Link  .Link__Title{ position: relative;}
 .Menu__Link  .Link__Title::before{
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     width: 0;
     content: "";
     display: block;
@@ -104,7 +104,7 @@
         justify-content: center;
     }
     .Menu__Link .Link__Description, .Menu .Link__CTA{
-        margin-top: 0.5rem !important; 
+        margin-top: 1rem !important; 
         margin-bottom: 1rem;
     }
     .Menu__Link .Link__Title::before { top: 1.7rem; }
@@ -115,7 +115,10 @@
         height: calc(100vh - 2 * var(--gap-size)); 
         background-color: var(--color-accent-alt);
     }
-    .Menu.Menu--Open .Menu__Link{ justify-content: unset; }
+    .Menu.Menu--Open .Menu__Link{ 
+        justify-content: unset; 
+        height: fit-content;
+    }
     .Menu.Menu--Open .Link:not(:first-child){
         display: block;
         padding-left: 0;

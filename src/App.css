@@ -42,7 +42,7 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-between;
 }
 .Layout__Content > *:not(:last-child) {
     border-right: solid black var(--border-width);
