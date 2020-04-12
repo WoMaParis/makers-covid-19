@@ -1,8 +1,5 @@
 
 .Map{
-    border-right: black solid var(--border-width);
-    width: 40%;
-    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -25,7 +22,7 @@
 .mapboxgl-popup-content {
     width: 300px;
     max-height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-radius: 0px;
     box-shadow: 0px 5px 5px #888888;
     border: var(--border-width) solid black;
@@ -42,7 +39,18 @@
     object-fit: contain;
     margin-right: 1rem;
 }
-
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-top-color: black !important;
+}
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+    border-bottom-color: black !important;
+}
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip{
+    border-right-color: black !important;
+}
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+    border-left-color: black !important;
+}
 
 @media all and (max-width: 1000px) {
 
