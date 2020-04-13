@@ -77,14 +77,33 @@ return(
                         coordinates={organisation.organisation.coordinates}
                         maxWidth={"300px"}
                     >
-                        <div className="Map__Informations">
+                        <div className="Section Map__Informations">
                             {organisation.organisation.logoUrl && (<img src={organisation.organisation.logoUrl} alt="illustration" />)}
-                            <h2>{organisation.organisation.name}</h2>
+                            <div className=''>
+                                <h3 className='Section__Title'>{organisation.organisation.name}</h3>
+                                <div className='Section__Subtitle'>{organisation.organisation.type}</div>
+
+                            {organisation.organisation.adress && (
+                                <div className='Section__Text'>
+                                    {organisation.organisation.adress}
+                                </div>
+                            )}
+
+                            {organisation.organisation.websiteUrl && (
+                                <div className='Section__Text'>@
+                                    <a className={'Simple__Link'} href={`mailto:${organisation.organisation.mail}`}>
+                                        {organisation.organisation.lead}
+                                    </a>
+                                </div>
+                            )}
+                            </div>
                         </div>
                     {organisation.organisation.websiteUrl && (
-                    <Button>
-                        <a href={organisation.organisation.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
-                        </Button>
+                        <div className={'Section--CTA'}>
+                            <Button>
+                                <a href={organisation.organisation.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
+                            </Button>
+                        </div>
                     )}
 
                     </Popup>

@@ -25,8 +25,8 @@ const Help = (props) => (
                 <ul className={"Section__List"}>
                     <li>De filaments plastique PETG 1,75mm / 2,85mm</li>
                     <li>De filaments plastique PLA 1,75 / 2,85 </li>
-                    <li>De feuilles de PolyPropylène O,8 mm, de PET 0,7mm</li>
-                    <li>De feuilles de PolyPropylène Crystal O,8 mm, de PVC 200um, de Rhodoïd A3 / A4</li>
+                    <li>De feuilles de PolyPropylène 0,8 mm, de PET 0,7mm</li>
+                    <li>De feuilles de PolyPropylène Crystal 0,8 mm, de PVC 200um, de Rhodoïd A3 / A4</li>
                     <li>De rouleaux 100% coton</li>
                     <li>De divers éléments : Elastiques de bureau, Elastiques de couture, Rivets plastiques</li>
                 </ul>

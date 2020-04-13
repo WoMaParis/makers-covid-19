@@ -82,7 +82,10 @@ const sheetsAPI = {
             name: "Nom",
             websiteUrl: "Site",
             logoUrl: "Logo",
-            adress: "Adresse"
+            adress: "Adresse",
+            lead: "Référent.e",
+            mail: "Mail",
+            type: "Type"
         }
         // Get Structured and filtered data
         let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];
@@ -93,13 +96,8 @@ const sheetsAPI = {
             coordinates = await client.geocodeForward(organisation.adress !== null ? organisation.adress : "paris");
             coordinates = coordinates.entity.features[0].center;
 
-            let extendedOrganisation = {
-                name: organisation.name,
-                adress: organisation.adress,
-                coordinates: coordinates,
-                websiteUrl: organisation.websiteUrl,
-                logoUrl: organisation.logoUrl
-            };
+            let extendedOrganisation = organisation;
+            extendedOrganisation.coordinates = coordinates;
             extendedOrganisations.push(extendedOrganisation)
         };
 

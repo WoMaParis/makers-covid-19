@@ -25,12 +25,12 @@ const About = (props) => (
                     Contacter les référent.e.s
                 </h3>
                 <ul className={"Section__List"}>
-                    <li><strong>Coordination : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:michael@volumesparis.org'}>Michael</a> </li>
-                    <li><strong>Production laser & 3d : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:corentin@volumesparis.org'}>Corentin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:flo@atelierdesamis.fr'}>Florence</a></li>
-                    <li><strong>Production textile : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:afournier@simplon.co'}>Antonin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:virginie@villettemakerz.com'}>Virginie</a></li>
-                    <li><strong>Fournitures et fournisseurs : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:sarah@fabcity.paris'}>Sarah</a></li>
-                    <li><strong>Financement et partenariats : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:minh@fabcity.paris'}>Minh</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:'}>Andy</a></li>
-                    <li><strong>Site & Communication : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:quentin@woma.fr'}>Quentin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:elefloch@simplon.co'}>Élaine</a></li>
+                    <li><strong>Coordination Labs et @Maison: </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:michael@volumesparis.org'}>@Michael</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:vincentguimas@gmail.com'}>@Vincent</a> </li>
+                    <li><strong>Production laser & 3d : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:corentin@volumesparis.org'}>@Corentin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:flo@atelierdesamis.fr'}>@Florence</a></li>
+                    <li><strong>Production textile : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:afournier@simplon.co'}>@Antonin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:virginie@villettemakerz.com'}>@Virginie</a></li>
+                    <li><strong>Fournitures et fournisseurs : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:sarah@fabcity.paris'}>@Sarah</a></li>
+                    <li><strong>Financement et partenariats : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:minh@fabcity.paris'}>@Minh</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:'}>@Andy</a></li>
+                    <li><strong>Site & Communication : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:quentin@woma.fr'}>@Quentin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:elefloch@simplon.co'}>@Élaine</a></li>
                 </ul>
             </div>
 

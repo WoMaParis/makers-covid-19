@@ -55,6 +55,11 @@ a:hover{  opacity: 0.9 !important;  }
 .Section__Text:not(:first-child){
     margin-top: 1rem;
 }
+.Section__Subtitle{
+    margin-top: -1rem;
+    font-family: Open_Sans_l, sans-serif;
+    text-transform: unset;
+}
 .Section__Action{
     margin-top: 1rem;
 }
