@@ -20,7 +20,7 @@ const Help = (props) => (
                     Vous avez accès à des matières premières ?
                 </h2>
                 <div className={"Section__Text"}>
-                    Nous avons besoin de <strong>matieres premeires</strong>, pour continuer la fabrication. Pour la production des visières, des masques et autres matériels nous cherchons :
+                    Nous avons besoin de <strong>matières premières</strong>, pour continuer la fabrication. Pour la production des visières, des masques et autres matériels nous cherchons :
                 </div>
                 <ul className={"Section__List"}>
                     <li>De filaments plastique PETG 1,75mm / 2,85mm</li>
@@ -30,7 +30,7 @@ const Help = (props) => (
                     <li>De rouleaux 100% coton</li>
                     <li>De divers éléments : Elastiques de bureau, Elastiques de couture, Rivets plastiques</li>
                 </ul>
-                <div className={"Section__Action"}>
+                <div className={"Section__Action Section__Action--CTA"}>
                     <Button>
                         <a href="mailto://sarah@fabicty.paris">
                             Contactez Sarah à sarah@fabcity.paris !

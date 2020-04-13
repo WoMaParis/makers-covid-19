@@ -10,7 +10,7 @@ const Map = (props) => {
     const [organisations, setOrganisations] = useState([]);
     const [map, setMap] = useState({
     fitBounds: undefined,
-    center: [2.385181, 48.897016],
+    center: [2.35183, 48.85658],
     zoom: [11],
     });
     const [organisation, setOrganisation] = useState({
@@ -89,10 +89,10 @@ return(
                                 </div>
                             )}
 
-                            {organisation.organisation.websiteUrl && (
-                                <div className='Section__Text'>@
+                            {organisation.organisation.lead && (
+                                <div className='Section__Text'>
                                     <a className={'Simple__Link'} href={`mailto:${organisation.organisation.mail}`}>
-                                        {organisation.organisation.lead}
+                                        @{organisation.organisation.lead}
                                     </a>
                                 </div>
                             )}
