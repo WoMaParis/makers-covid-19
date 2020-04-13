@@ -31,9 +31,6 @@ const Collectif = () => {
         <h3 className={"Section__Title"}>
           Le Collectif
         </h3>
-        <div className={"Section__Text"}>
-          Toutes les structures et organisations, petites ou grandes, qui contribuent à faire fonctionner ce mode de production.
-        </div>
       <div className={`Collectif__Members Section__Text`}>
 
         {organisations.map((el, i) => {

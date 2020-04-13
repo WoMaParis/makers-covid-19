@@ -6,36 +6,46 @@ import './Help.css'
 const Help = (props) => (
     <Fragment>
 
-        <section className={'Help__Materials'}>
+    <section className={'Help__Information'}>
             <div className={"Section"}>
                 <h2 className={"Section__Title"}>
-                    Faire un don au collectif.
+                    Vous voulez faire un don ? 
                 </h2>
                 <div className={"Section__Text"}>
-                    Nous avons besoin de <strong>matieres premeires</strong>, pour continuer la production :
+                    Nous mettons tout cela en oeuvre gratuitement et bénévolement Si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y aucun but lucratif à cette démarche. Vous pouvez également nous soutenir en nous aidant à nous procurer des matériaux ou en participant à notre cagnotte sur HelloAsso !
+                </div>
+            </div>
+            <div className={"Section"}>
+                <h2 className={"Section__Title"}>
+                    Vous avez accès à des matières premières ?
+                </h2>
+                <div className={"Section__Text"}>
+                    Nous avons besoin de <strong>matieres premeires</strong>, pour continuer la fabrication. Pour la production des visières, des masques et autres matériels nous cherchons :
                 </div>
                 <ul className={"Section__List"}>
-                    <li>Filament plastique PETG 1,75 /2,85 PLA 1,75 / 2,85</li>
-                    <li>Rouleaux 100% coton</li>
-                    <li>Feuilles plastique PP O,8 mm / PP Crystal / Rhodoïd / PVC 200 microns / PET 0,7mm</li>
-                    <li>Elastiques, Elastiques de couture, Rivets plastiques</li>
+                    <li>De filaments plastique PETG 1,75mm / 2,85mm</li>
+                    <li>De filaments plastique PLA 1,75 / 2,85 </li>
+                    <li>De feuilles de PolyPropylène O,8 mm, de PET 0,7mm</li>
+                    <li>De feuilles de PolyPropylène Crystal O,8 mm, de PVC 200um, de Rhodoïd A3 / A4</li>
+                    <li>De rouleaux 100% coton</li>
+                    <li>De divers éléments : Elastiques de bureau, Elastiques de couture, Rivets plastiques</li>
                 </ul>
                 <div className={"Section__Action"}>
                     <Button>
-                        <a href="mailto://hello@fabicty.paris">
-                            Contacter nous directement à hello@fabcity.paris !
+                        <a href="mailto://sarah@fabicty.paris">
+                            Contactez Sarah à sarah@fabcity.paris !
                         </a>
                     </Button>
                 </div>
             </div>
-    </section>
-    <Iframe 
-    id="haWidget" 
-    className={'Help__HelloAsso'}
-    allowtransparency="true" 
-    scrolling="auto" 
-    src="https://www.helloasso.com/associations/fab-city-grand-paris/formulaires/1/widget" 
-    />
+        </section>
+        <Iframe 
+        id="haWidget" 
+        className={'Help__HelloAsso'}
+        allowtransparency="true" 
+        scrolling="auto" 
+        src="https://www.helloasso.com/associations/fab-city-grand-paris/formulaires/1/widget" 
+        />
 
     </Fragment>
 )

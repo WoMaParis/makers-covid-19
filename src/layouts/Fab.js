@@ -11,30 +11,27 @@ const Fab = (props) => (
         <section className={`Fab__Note`}>
             <div className={"Section"}>
                 <h2 className={"Section__Title"}>
-                    Aider à la fabrication de matériel.
+                    Participer à la fabrication de matériel
                 </h2>
                 <div className={"Section__Text"}>
-                    Si surtout, vous <strong>ne présentez aucun symptômes et n'êtes pas malade</strong>, et vous voyez l'interêt de :
+                    Si et seulement si vous <strong>ne présentez aucun symptôme et n'êtes pas malade</strong>, et que vous voyez l'intérêt de :
                 </div>
                 <ul className={"Section__List"}>
-                    <li>Centraliser les besoins pour pouvoir y répondre collectivement qu'elle que soit leur taille.</li>
-                    <li>Faire un fond de solidarité pour que les trésorerie de chacuns ne soit pas un freins à l'entraide.</li>
-                    <li>Mutualiser les ressources logistiques; matiere premieres, livraison...</li>
-                    <li>Gagner du temps en partageant les apprentissages techniques; matériaux , modèles...</li>
+                    <li>Centraliser les besoins pour pouvoir y répondre collectivement</li>
+                    <li>Faire un fond de solidarité pour que les trésoreries de chacun ne soient pas un frein à l'entraide.</li>
+                    <li>Mutualiser les ressources logistiques ; matières premières, livraisons...</li>
+                    <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
-            </div>
-            
-            <div className={"Section"}>
                 <div className={"Section__Text"}>
-                    Vous pouvez alors contribuer de plusieurs manières :
+                    Vous pouvez contribuer de plusieurs manières :
                 </div>
                 <div className={'Profiles'}>
                     <div className={'Profiles__Profile'}>
                         <h3 className={"Section__Title"}>
-                            1 | Vous faites parti d'un espace de fabrication.
+                            1 | Vous faites partie d'un espace de fabrication.
                         </h3>
                         <div className={"Section__Text"}>
-                            Si vous faites parti ou gérez un espace de fabrication dotés d'imprimantes 3D, de découpeuse laser, de machines à coudres, ça peut ètre très utile ! <strong>Discutez avec les administrateurs, pour ne pas prendre de risques inutiles.</strong> Il faut pouvoir mobiliser une communautés la plus restreintes et la plus présente possible.<strong>Nous restons en periode de confinements !</strong>
+                            Si vous faites partie ou gérez un espace de fabrication doté d'imprimante(s) 3D, de découpeuse(s) laser, de machine(s) à coudre, ça peut être très utile ! <strong>Discutez avec les administrateurs pour ne pas prendre de risques inutiles</strong>. Il faut pouvoir mobiliser une communauté restreintes et disponible pour éviter les risques de contagions avec trop de roulement. <strong>Nous restons en période de confinements !</strong>
                         </div>
                     </div>
                     <div className={'Profiles__Profile'}>
@@ -42,14 +39,14 @@ const Fab = (props) => (
                             2 | Vous pouvez produire chez vous.
                         </h3>
                         <div className={"Section__Text"}>
-                            Vous avez votre propre équipement et vous voulez/pouvez contribuer en imprimant des pièces, assemblant des kits, cousant des masques. Le mieux est d'utiliser la carte des lieux du collectif pour <strong>vous rattacher au lab le plus proche de chez</strong> ! Contactez ensuite la personne référente pour voir comment vous organiser !
+                            Vous avez votre propre équipement et vous voulez/pouvez contribuer en imprimant des pièces, assemblant des kits, cousant des masques ? Le mieux est d'utiliser la carte des lieux du collectif pour <strong>vous rattacher au lab le plus proche de chez vous </strong>! Contactez ensuite la personne référente pour voir comment vous organiser.
                         </div>
                     </div>
                 </div>
                 <div className={"Section__Action"}>
                     <Button className={'Profile__Button'}>
                         <a href="https://join.slack.com/t/fabcityparis/shared_invite/zt-d8nqbwf8-4jAaXrZabzZhrll_xD7kNQ" target="_blank" rel="noopener noreferrer">
-                            Rejoignez le Slack de coordination.
+                            Rejoignez la conversation sur slack.
                         </a>
                     </Button>
                 </div>
@@ -60,7 +57,7 @@ const Fab = (props) => (
                 </h3>
                 <Button className={'Section__Action'}>
                     <Link to="/help" >
-                        Faire un don !
+                        Faire un don
                     </Link>
                 </Button>
             </div>

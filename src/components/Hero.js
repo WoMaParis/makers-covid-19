@@ -19,7 +19,6 @@ const Hero = (props) => {
             } catch (error) {
                 console.log(error);
             };
-            console.log(milestones);
             
             setMilestones(milestones);
             setLoading(false);

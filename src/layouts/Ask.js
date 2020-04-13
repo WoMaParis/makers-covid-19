@@ -11,16 +11,16 @@ const Ask = (props) => (
     <section className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Ask__Informations`}>
             <div className={"Section"}>
                 <h2 className={"Section__Title"}>
-                    Demande de matériel matériel sanitaire.
+                    Demande de matériel matériel sanitaire
                 </h2>
                 <div className={"Section__Text"}>
-                    Même si nous faisons en sorte de produire du materiel de la meilleure qualité possible,<strong> le matériel que nous produisons n'est pas certifié, c'est une production d'urgence</strong>.
+                    Même si nous faisons en sorte de produire du matériel de la meilleure qualité possible, <strong>le matériel que nous produisons n'est pas certifié, c'est une production d'urgence</strong>.
                 </div>
                 <div className={"Section__Text"}>
                     Nous faisons en sorte de répondre le plus justement et rapidement possible à toutes les demandes. Ainsi, voici le nombre d'unités que nous pouvons fournir en moyenne par catégories :
                 </div>
                 <ul className={"Section__List"}>
-                    <li>Petite structure (médical et première nécessité) : <strong>10 - 30 unités</strong></li>
+                    <li>Petite structure (médicale et de première nécessité) : <strong>10 - 30 unités</strong></li>
                     <li>Service et centre médical / EHPAD : <strong>10 - 50 unités unités</strong></li>
                     <li>CHU : <strong>100 - 300 unités</strong></li>
                 </ul>
@@ -28,7 +28,7 @@ const Ask = (props) => (
             </div>
             <div className={"Section"}>
                 <h3 className={"Section__Title"}>
-                    Materiels produits et capacité
+                    Matériels produits et capacités
                 </h3>
                 <div className={"Section__Text"}>
                     Aujourd'hui nous sommes en capacité de produire :
@@ -40,16 +40,16 @@ const Ask = (props) => (
                     <li><strong>Des surblouses</strong>- 1000 u/jour</li>
                 </ul>
                 <div className={"Section__Text"}>
-                    Le matériel est fourni à <strong>titre gracieux par le collectif</strong> grâce aux efforts de tous les membres, particuliers, entreprise et associations, <strong>si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
+                    Le matériel est fourni à <strong>titre gracieux par le collectif</strong>, grâce aux efforts de tous les membres, particuliers, entreprise et associations. <strong>Si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
                 </div>
             </div>
             <div className={"Section Section--CTA"}>
                 <h3 className={"Section__Title"}>
-                    Aidez le collectif
+                    Le collectif à besoin d'aide !
                 </h3>
                 <Button className={'Section__Action'}>
                     <Link to="/help" >
-                        Faire un don !
+                        Faire un don
                     </Link>
                 </Button>
             </div>

@@ -12,7 +12,7 @@ const Home = (props) => (
 
         <section className={'Home__Actions Actions'}>
 
-                <div className={'Section'}>
+            <div className={'Section Section--Hoverable'}>
                     <h3 className={"Section__Title"}>
                         Vous avez des besoins en matériel ?
                     </h3>
@@ -28,7 +28,7 @@ const Home = (props) => (
                     </div>
                 </div>
 
-                <div className={'Section'}>
+            <div className={'Section Section--Hoverable'}>
                     <h3 className={"Section__Title"}>
                         Vous voulez aider à produire  ?
                         </h3>
@@ -45,7 +45,7 @@ const Home = (props) => (
                 </div>
 
 
-                <div className={'Section'}>
+            <div className={'Section Section--Hoverable'}>
                     <h3 className={"Secction__Title"}>
                         Vous voulez soutenir le collectif ?
                     </h3>

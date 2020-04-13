@@ -22,9 +22,9 @@ const Menu = (props) => {
                         MxC.paris
                     </Link>
                 </h1>
-                <p className="Link__Description">
-                    MakersCovid.paris apporte du matériel sanitaire d'urgence pour l'Ile-de-France.
-                </p>
+                <div className="Link__Description">
+                    Makerscovid.paris fabrique du materiel sanitaire d’urgence pour l’île de france. 
+                </div>
                     
                 <Button className="Link__CTA Button--Inverted">
                     <Link to="/about" onClick={() => { setMenuOpen(false) }} >
@@ -35,26 +35,25 @@ const Menu = (props) => {
             <Link to="/ask" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'ask' ? 'Menu__Link--active':''}`}>
                 <h2 className="Link__Title">Demander</h2>
                 <p className="Link__Description">
-                    Vous avez des besoins en matériel sanitaire, ou vous chercher plus d'informations sur le matériel, vos commandes.
+                    Vous avez des besoins en matériel sanitaire, vous voulez effectuer une commande, ou vous cherchez plus d’informations sur le matériel ?
                 </p>
             </Link>
             <Link to="/fab" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'fab' ? 'Menu__Link--active':''}`}>
                 <h2 className="Link__Title">Fabriquer</h2>
                 <p className="Link__Description">
-                    Vous cherchez à participer à la fabrication de matériel sanitaires à l'aide vos compétences et outils.
+                    Vous cherchez à participer à la fabrication de matériel sanitaire à l’aide de vos compétences ou de vos outils ?
                 </p>
             </Link>
             <Link to="/help" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'help' ? 'Menu__Link--active':''}`}>
                 <h2 className="Link__Title">Donner</h2>
                 <p className="Link__Description">
-                    Vous voulez aider le collectifs dans ses activités à travers un don, qu'il soit financier ou de la matiere premiere.
+                    Vous voulez aider le collectif dans ses activités, que ce soit financièrement ou en faisant un don de matériaux ?
                 </p>
             </Link>
             <Link to="/about" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'about' ? 'Menu__Link--active' : ''}`}>
                 <h2 className="Link__Title">À propos</h2>
                 <p className="Link__Description">
-                    Vous souhaitez plus d'informations sur le collectif ou nous contacter.
-                </p>
+                    Vous souhaitez plus d’informations sur le collectif ou nous contacter ?                 </p>
             </Link>
             <div className={`MobileToggle`} onClick={() => { setMenuOpen(!menuOpen) }}>
                 <div className={`MobileToggle__Toggle`} ></div>
