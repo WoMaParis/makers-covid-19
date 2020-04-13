@@ -29,8 +29,6 @@ const Home = (props) => (
                 </div>
 
             <div className={'Section Section--Hoverable'}>
-                    <img src={'/illustrations/ask.png'}/>
-                    <div>
                         <h3 className={"Section__Title"}>
                             Vous voulez aider à produire  ?
                             </h3>
@@ -44,7 +42,6 @@ const Home = (props) => (
                                 </Link>
                             </Button>
                         </div>
-                    </div>
                 </div>
 
             <div className={'Section Section--Hoverable'}>
