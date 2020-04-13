@@ -13,9 +13,7 @@ const Map = (props) => {
     center: [2.35183, 48.85658],
     zoom: [11],
     });
-    const [organisation, setOrganisation] = useState({
-        organisation: undefined,
-    });
+    const [selection, setSelection] = useState({selection : undefined});
     const [loading, setLoading] = useState(true);
 
 useEffect(() => {
@@ -34,12 +32,13 @@ useEffect(() => {
     fetchData();
 }, []);
 
-const close = () => { if (organisation) setOrganisation({ organisation: undefined }); };
+    const close = () => { if (selection) setSelection({ selection: undefined }); };
 
 const onToggleHover = (cursor, { map }) => { map.getCanvas().style.cursor = cursor; }
 
 const markerClick = (organisation) => {
-    setOrganisation({ organisation: organisation })
+    
+    setSelection({ selection: organisation })
     setMap({ center: organisation.coordinates, zoom: [14] });
 };
 
@@ -73,38 +72,44 @@ return(
                 </Layer>
 
 
-                {organisation.organisation && (
+                {selection.selection && (
                     <Popup
-                        coordinates={organisation.organisation.coordinates}
+                        coordinates={selection.selection.coordinates}
                         maxWidth={"300px"}
                     >
                         <div className="Section Map__Informations">
-                            {organisation.organisation.logoUrl && (
-                            <img className={`Illustration ${organisation.organisation.type === "Manufacture@Maison" ? 'Illustration--Photo' : '' }`} src={organisation.organisation.logoUrl} alt="illustration" />
+                            {selection.selection.logoUrl && (
+                            <img className={`Illustration ${selection.selection.type === "Manufacture@Maison" ? 'Illustration--Photo' : '' }`} src={selection.selection.logoUrl} alt="illustration" />
                             )}
                             <div className=''>
-                                <h3 className='Section__Title'>{organisation.organisation.name}</h3>
-                                <div className='Section__Subtitle'>{organisation.organisation.type}</div>
+                                <h3 className='Section__Title'>{selection.selection.name}</h3>
+                                <div className='Section__Subtitle'>{selection.selection.type}</div>
 
-                            {organisation.organisation.adress && (
+                            {selection.selection.adress && (
                                 <div className='Section__Text'>
-                                    {organisation.organisation.adress}
+                                    {selection.selection.adress}
                                 </div>
                             )}
 
-                            {organisation.organisation.lead && (
+                            {selection.selection.lead && (
                                 <div className='Section__Text'>
-                                    <a className={'Simple__Link'} href={`mailto:${organisation.organisation.mail}`} target="_self" rel='noopener noreferrer' >
-                                        @{organisation.organisation.lead}
+                                    <a className={'Simple__Link'} href={`mailto:${selection.selection.mail}`} target="_self" rel='noopener noreferrer' >
+                                        @{selection.selection.lead}
                                     </a>
                                 </div>
                             )}
                             </div>
-                        </div>
-                    {organisation.organisation.websiteUrl && (
+                    </div>
+                    <div className="Section Tools">
+                        <span className="Tool">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
+                        <span className="Tool">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>
+                        <span className="Tool">{selection.selection.printer} <img className="Tool__Icon" src={'/icons/tools_3dPrinter.svg'} alt={'Imprimante 3D'}/></span>
+                        <span className="Tool">{selection.selection.sewingMachine} <img className="Tool__Icon" src={'/icons/tools_SewingMachine.svg'} alt={'Machine à coudre'}/></span>
+                    </div>
+                    {selection.selection.websiteUrl && (
                         <div className={'Section--CTA'}>
                             <Button>
-                                <a href={organisation.organisation.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
+                                <a href={selection.selection.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
                             </Button>
                         </div>
                     )}

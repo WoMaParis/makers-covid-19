@@ -88,7 +88,7 @@ const sheetsAPI = {
             type: "Type",
             laser: "Laser",
             cutter: "Cutter / Plotter",
-            sewingMahchine: "Machines à coudre",
+            sewingMachine: "Machines à coudre",
             printer: "Imprimante 3D"
         }
         // Get Structured and filtered data
@@ -136,43 +136,7 @@ const sheetsAPI = {
         }
         // return Structured and filtered data
         return await structureData(sheetLabel, dataLabels, param);
-    },
-
-    // NOT WORKING AS OF NOW 
-    // WORK IN PROGRESS
-    // NEED TO CHECK FOR CELL LOADING ERROR
-    //
-    // Returns an array of key milestones
-    // getMilestones: async () => {
-    //     const sheetLabel = "Notice"; // Define name of the targeted sheet
-    //     const dataLabels = {// Define header labels for targeted data
-    //         delivered: "livré",
-    //         built: "fabriqué",
-    //         builtToday: "aujourd'hui",
-    //         ordered: "demandé",
-    //         theoricalCapacity: "théorique",
-    //         effectiveCapacity: "effective",
-    //         placesNumber: "lieux",
-    //         volunteersNumber: "bénévoles",
-    //         laserNumber: "laser",
-    //         printerNumber: "3D",
-    //         sewingMachineNumber: "coudre",
-    //     }
-
-    //     try {
-    //         await doc.loadInfo(); // loads document properties and worksheets
-    //         const milestonesSheet = doc.sheetsByIndex.filter((el, i) => el.title.indexOf(sheetLabel) >= 0)[0]; // get milestones sheet 
-
-
-    //         await milestonesSheet.loadCells('N3:R14');; // loads rows with first row as header
-    //         // Filter results to cull empty rows
-    //         // console.log(milestonesSheet.getCell(0, 0));
-
-
-    //         // Shuffle array to display differnt peopel first
-    //         // return milestones
-    //     } catch (error) { console.log(error); }
-    // }
+    }
 
 }
 

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'react-router-dom'
 import Map from '../components/Map.js'
 import Button from '../components/Button.js'
 import './Fab.css'
