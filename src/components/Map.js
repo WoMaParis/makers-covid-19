@@ -78,7 +78,9 @@ return(
                         maxWidth={"300px"}
                     >
                         <div className="Section Map__Informations">
-                            {organisation.organisation.logoUrl && (<img src={organisation.organisation.logoUrl} alt="illustration" />)}
+                            {organisation.organisation.logoUrl && (
+                            <img className={`Illustration ${organisation.organisation.type === "Manufacture@Maison" ? 'Illustration--Photo' : '' }`} src={organisation.organisation.logoUrl} alt="illustration" />
+                            )}
                             <div className=''>
                                 <h3 className='Section__Title'>{organisation.organisation.name}</h3>
                                 <div className='Section__Subtitle'>{organisation.organisation.type}</div>

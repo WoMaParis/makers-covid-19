@@ -33,14 +33,16 @@
     display: flex;
     align-content: flex-start;
     flex-direction: row;
-    margin-bottom: 1rem;
 }
 
-.mapboxgl-popup-content img{
+.mapboxgl-popup-content .Illustration{
     width: 30%;
     height: auto;
     object-fit: contain;
     margin-right: 1rem;
+}
+.mapboxgl-popup-content .Illustration.Illustration--Photo{
+    object-fit: cover;
 }
 .mapboxgl-popup-content .Section__Text{
     line-height: 1.1;
