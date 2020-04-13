@@ -22,9 +22,8 @@ const Fab = (props) => (
                     <li>Mutualiser les ressources logistiques ; matières premières, livraisons...</li>
                     <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
-                <div className={"Section__Text"}>
-                    Vous pouvez contribuer de plusieurs manières :
                 </div>
+                <div className={"Section"}>
                 <div className={'Profiles'}>
                     <div className={'Profiles__Profile'}>
                         <h3 className={"Section__Title"}>

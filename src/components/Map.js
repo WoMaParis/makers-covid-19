@@ -23,7 +23,8 @@ useEffect(() => {
 
         try {
             let organisations = await fetch('/.netlify/functions/getData?organisations=all');
-            organisations = await organisations.json();    
+            organisations = await organisations.json(); 
+            organisations = organisations.filter((el, i)=>(el.type === 'Manufacture Ouverte' || el.type === 'Manufacture@Maison'))
             setOrganisations(organisations);
             setLoading(false);
 
@@ -93,7 +94,7 @@ return(
 
                             {organisation.organisation.lead && (
                                 <div className='Section__Text'>
-                                    <a className={'Simple__Link'} href={`mailto:${organisation.organisation.mail}`}>
+                                    <a className={'Simple__Link'} href={`mailto:${organisation.organisation.mail}`} target="_self" rel='noopener noreferrer' >
                                         @{organisation.organisation.lead}
                                     </a>
                                 </div>
