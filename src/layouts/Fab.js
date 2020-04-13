@@ -33,7 +33,7 @@ const Fab = (props) => (
                             Vous faites partie d'un espace de fabrication.
                         </h4>
                         <div className={"Section__Text"}>
-                            Si vous faites partie ou gérez un espace de fabrication doté d'imprimante(s) 3D, de découpeuse(s) laser, de machine(s) à coudre, ça peut être très utile ! <strong>Discutez avec les administrateurs pour ne pas prendre de risques inutiles</strong>. Il faut pouvoir mobiliser une communauté restreintes et disponible pour éviter les risques de contagions avec trop de roulement. <strong>Nous restons en période de confinements !</strong> 
+                            Si vous faites partie ou gérez un espace de fabrication doté d'imprimante(s) 3D, de découpeuse(s) laser, de machine(s) à coudre, ça peut être très précieux ! <strong>Discutez avec les administrateurs pour ne pas prendre de risques inutiles</strong>. Il faut pouvoir mobiliser une communauté restreinte et disponible pour éviter les risques de contagion avec trop de roulements. <strong>Nous restons en période de confinement !</strong> 
                         </div>
                         <div className={"Section__Text"}>
                             Pour plus d'informations contactez <a className={'Simple__Link'} href={'mailto:michael@volumesparis.org'}>@Michael</a>.

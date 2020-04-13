@@ -85,7 +85,11 @@ const sheetsAPI = {
             adress: "Adresse",
             lead: "Référent.e",
             mail: "Mail",
-            type: "Type"
+            type: "Type",
+            laser: "Laser",
+            cutter: "Cutter / Plotter",
+            sewingMahchine: "Machines à coudre",
+            printer: "Imprimante 3D"
         }
         // Get Structured and filtered data
         let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];

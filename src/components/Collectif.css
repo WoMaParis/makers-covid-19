@@ -29,9 +29,8 @@
 
 .Member{
     width: 16%;
-    height: auto;
     padding: 1rem;
-    
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +42,8 @@
     width: 0%;
     height: 90%;
     z-index: 1000;
+    left: 0;
+    opacity: 1;
     line-height: 1;
     transition: var(--transition-fast);
     background-color: var(--color-accent-alt);
@@ -79,7 +80,6 @@
 .Member:hover .Member__Link{
     width: 90%;
     padding: 1.5rem;
-    border: solid black var(--border-width);
 }
 
 @media all and (max-width: 1000px) { 

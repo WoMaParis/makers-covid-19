@@ -17,7 +17,7 @@ const Home = (props) => (
                         Vous avez des besoins en matériel ?
                     </h3>
                     <div className={"Section__Text"}>
-                        Si vous avez ou connaissez des personnes ayant besoin de <strong> matériel en Ile-de-France, visières, masques</strong> ? Le matériel est fourni <strong>gratuitement et bénévolement</strong>, mais ne remplace pas un équipement médical certifié, c'est une solution d'urgence pour pallier au manque.
+                    Vous, ou des personnes que vous connaissez, avez besoin de <strong>matériel en île de France : visières, masques...</strong> ? Le matériel est fourni <strong>gratuitement et bénévolement</strong>, mais ne remplace pas un équipement médical certifié, c'est une solution d'urgence pour pallier le manque.
                     </div>
                     <div className={"Section__Action"}>
                         <Button>
@@ -33,7 +33,7 @@ const Home = (props) => (
                         Vous voulez aider à produire  ?
                         </h3>
                     <div className={"Section__Text"}>
-                        Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipé de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Vous ne présentez aucun symptôme et n'êtes pas malade. Rejoignez le slack de coordination pour contribuer à la production.
+                        Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Si vous ne présentez aucun symptôme et n'êtes pas malades. Rejoignez le slack de coordination pour contribuer à la production.
                     </div>
                     <div className={"Section__Action"}>
                         <Button>
@@ -43,7 +43,6 @@ const Home = (props) => (
                         </Button>
                     </div>
                 </div>
-
 
             <div className={'Section Section--Hoverable'}>
                     <h3 className={"Secction__Title"}>

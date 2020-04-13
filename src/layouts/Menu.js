@@ -53,7 +53,7 @@ const Menu = (props) => {
             <Link to="/about" onClick={() => { setMenuOpen(false) }} className={`Menu__Link Link ${currentRoute === 'about' ? 'Menu__Link--active' : ''}`}>
                 <h2 className="Link__Title">À propos</h2>
                 <p className="Link__Description">
-                    Vous souhaitez plus d’informations sur le collectif ou nous contacter ?                 </p>
+                    Vous souhaitez nous contacter ou obtenir plus d'informations sur le collectif ?</p>
             </Link>
             <div className={`MobileToggle`} onClick={() => { setMenuOpen(!menuOpen) }}>
                 <div className={`MobileToggle__Toggle`} ></div>

@@ -14,8 +14,8 @@ const About = (props) => (
                     À propos du collectif Makers x Covid-19 Paris
                 </h2>
                 <div className={"Section__Text"}>
-                    Le collectif <strong>Makers x Covid Paris</strong> fait parti des multiples initiatives qui cont nées sur le territoir pour pallier au manque de materiels sanitaires.
-                    Le collectif s'est construit autour des initiatives portées par <a className={'Simple__Link '} href={'http://volumesparis.org/'} target="_blank" rel="noopener noreferrer">Volumes</a>, <a className={'Simple__Link'} href={'https://www.electrolab.fr/'} target="_blank" rel="noopener noreferrer">l'Electrolab</a> et l'<a className={'Simple__Link '} href={'https://www.atelierdesamis.fr/'} target="_blank" rel="noopener noreferrer">Atelier des Amis</a>. Très vite, les autres labs et des partenaires publics ou des fournisseurs se sont rallié au mouvement.<br/>
+                    Le collectif <strong>Makers x Covid Paris</strong> fait partie des multiples initiatives qui sont nées sur le territoire pour pallier le manque de materiel sanitaire.
+                    Le collectif s'est construit autour des initiatives portées par <a className={'Simple__Link '} href={'http://volumesparis.org/'} target="_blank" rel="noopener noreferrer">Volumes</a>, <a className={'Simple__Link'} href={'https://www.electrolab.fr/'} target="_blank" rel="noopener noreferrer">l'Electrolab</a> et l'<a className={'Simple__Link '} href={'https://www.atelierdesamis.fr/'} target="_blank" rel="noopener noreferrer">Atelier des Amis</a>. Très vite, les autres labs, mais aussi des partenaires publics et des fournisseurs se sont ralliés au mouvement.<br/>
                     <strong>L'objectif est de produire de manière organisée un maximum de matériel pour les personnes les plus exposées.</strong>
                 </div>
             </div>

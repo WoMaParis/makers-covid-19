@@ -17,7 +17,7 @@ const Ask = (props) => (
                     Même si nous faisons en sorte de produire du matériel de la meilleure qualité possible, <strong>le matériel que nous produisons n'est pas certifié, c'est une production d'urgence</strong>.
                 </div>
                 <div className={"Section__Text"}>
-                    Nous faisons en sorte de répondre le plus justement et rapidement possible à toutes les demandes. Ainsi, voici le nombre d'unités que nous pouvons fournir en moyenne par catégories :
+                    Nous faisons en sorte de répondre le plus justement et rapidement possible à toutes les demandes. Ainsi, voici le nombre d'unités que nous pouvons fournir en moyenne par catégorie :
                 </div>
                 <ul className={"Section__List"}>
                     <li>Petite structure (médicale et de première nécessité) : <strong>10 - 30 unités</strong></li>
@@ -35,17 +35,17 @@ const Ask = (props) => (
             </div>
                 <ul className={"Section__List"}>
                     <li><strong>Des visière de protection</strong> - 1000 u/jour</li>
-                    <li><strong>Des masques en tissus</strong> - 500 u/jour</li>
+                    <li><strong>Des masques en tissu</strong> - 500 u/jour</li>
                     <li><strong>Des adaptateurs</strong> - 50 u/jour</li>
                     <li><strong>Des surblouses</strong> - 100 u/jour</li>
                 </ul>
                 <div className={"Section__Text"}>
-                    Le matériel est fourni à <strong>titre gracieux par le collectif</strong>, grâce aux efforts de tous les membres, particuliers, entreprise et associations. <strong>Si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
+                    Le matériel est fourni à <strong>titre gracieux par le collectif</strong>, grâce aux efforts de tous les membres, particuliers, entreprises et associations. <strong>Si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
                 </div>
             </div>
             <div className={"Section Section--CTA"}>
                 <h3 className={"Section__Title"}>
-                    Le collectif à besoin d'aide !
+                    Le collectif a besoin d'aide !
                 </h3>
                 <Button className={'Section__Action'}>
                     <Link to="/help" >

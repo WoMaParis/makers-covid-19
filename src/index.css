@@ -8,7 +8,7 @@
     --color-accent: #0d04f5;
     --color-accent-alt: #fbd014;
     --menu-height: 90px;
-    --transition-fast :  all 0.5s ease;
+    --transition-fast :  all 0.5s cubic-bezier(0.38,-0.15, 0.63, 1.15);
     font-size: 15px;
 }
 
