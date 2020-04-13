@@ -168,7 +168,7 @@
 
 /* Opened Menu */
     .Menu.Menu--Open{ 
-        height: calc(100vh - 2 * var(--gap-size)); 
+        height: calc(90vh - 2 * var(--gap-size)); 
         background-color: var(--color-accent-alt);
     }
     .Menu.Menu--Open .Menu__Link{ 
@@ -185,6 +185,14 @@
     .Menu.Menu--Open .Link__CTA {
         display: block;
     }
+
+.Menu.Menu--Open + .Layout__Content {
+    opacity: 0;
+}
+.Menu + .Layout__Content {
+    opacity: 1;
+    transition: var(--transition-fast);
+}
 
 /* Toggle view */
     .MobileToggle{

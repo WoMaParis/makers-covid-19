@@ -14,6 +14,8 @@
 .Layout{
     height: 100vh; 
     width: 100vw; 
+    min-height: 100vh;
+    min-width: 100vw;
 }
 .Layout__Content, .Layout__Menu{
     margin: var(--gap-size);

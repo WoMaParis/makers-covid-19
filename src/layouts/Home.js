@@ -29,18 +29,21 @@ const Home = (props) => (
                 </div>
 
             <div className={'Section Section--Hoverable'}>
-                    <h3 className={"Section__Title"}>
-                        Vous voulez aider à produire  ?
-                        </h3>
-                    <div className={"Section__Text"}>
-                        Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Si vous ne présentez aucun symptôme et n'êtes pas malades. Rejoignez le slack de coordination pour contribuer à la production.
-                    </div>
-                    <div className={"Section__Action"}>
-                        <Button>
-                            <Link to="/fab">
-                                Rejoindre le collectif !
-                            </Link>
-                        </Button>
+                    <img src={'/illustrations/ask.png'}/>
+                    <div>
+                        <h3 className={"Section__Title"}>
+                            Vous voulez aider à produire  ?
+                            </h3>
+                        <div className={"Section__Text"}>
+                            Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Si vous ne présentez aucun symptôme et n'êtes pas malades. Rejoignez le slack de coordination pour contribuer à la production.
+                        </div>
+                        <div className={"Section__Action"}>
+                            <Button>
+                                <Link to="/fab">
+                                    Rejoindre le collectif !
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
