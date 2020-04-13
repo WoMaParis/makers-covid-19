@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-    "dotenv": "^8.2.0",
     "google-spreadsheet": "^3.0.10",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^1.6.1",
@@ -14,8 +13,7 @@
     "react-iframe": "^1.8.0",
     "react-mapbox-gl": "^4.8.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "semantic-ui-react": "^0.88.2"
+    "react-scripts": "3.4.0"
   },
   "devDependencies": {},
   "scripts": {
