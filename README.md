@@ -29,11 +29,11 @@ Blanche Broquet, Yoann Bordes-Pages, Rémi Lapostolle, Minh Man Nguyen, Quentin 
 ## ✅ À faire
 
 - [ ] Statut des commandes pour les demandeurs.
-- [ ] Page de présentations des organisations partenaires et des bénévoles.
-- [ ] Page de dons pour les matieres premieres.
-- [ ] Statistiques de productions.
-- [ ] Page pour les inititaives partenaires.
-- [ ] Relier à notre outil de gestion.
+- [x] Page de présentations des organisations partenaires et des bénévoles.
+- [x] Page de dons pour les matieres premieres.
+- [x] Statistiques de productions.
+- [x] Page pour les inititaives partenaires.
+- [x] Relier à notre outil de gestion.
 
 ## 💌 Contribuer
 
