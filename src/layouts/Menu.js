@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Button from '../components/Button';
+import { MdInfo } from 'react-icons/md';
 import {Link, withRouter} from 'react-router-dom';
 import './Menu.css';
 
@@ -54,6 +55,9 @@ const Menu = (props) => {
                 <h2 className="Link__Title">À propos</h2>
                 <p className="Link__Description">
                     Vous souhaitez nous contacter ou obtenir plus d'informations sur le collectif ?</p>
+            </Link>
+            <Link to="/credits" onClick={() => { setMenuOpen(false) }} id={`Link__Credit`}>
+                <MdInfo/>
             </Link>
             <div className={`MobileToggle`} onClick={() => { setMenuOpen(!menuOpen) }}>
                 <div className={`MobileToggle__Toggle`} ></div>

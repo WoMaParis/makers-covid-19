@@ -5,6 +5,7 @@ import Ask from './layouts/Ask.js';
 import Fab from './layouts/Fab.js';
 import Help from './layouts/Help.js';
 import About from './layouts/About.js';
+import Credits from './layouts/Credits.js';
 import './App.css';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
@@ -21,6 +22,7 @@ const App = (props) => {
           <Route path="/fab" exact component={Fab} />
           <Route path="/help" exact component={Help} />
           <Route path="/about" exact component={About} />
+          <Route path="/credits" exact component={Credits} />
       </main>
     </div>
     </Router>
