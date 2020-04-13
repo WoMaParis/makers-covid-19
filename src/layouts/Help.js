@@ -12,7 +12,7 @@ const Help = (props) => (
                     Vous voulez faire un don ? 
                 </h2>
                 <div className={"Section__Text"}>
-                    Nous mettons tout cela en oeuvre gratuitement et bénévolement Si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y aucun but lucratif à cette démarche. Vous pouvez également nous soutenir en nous aidant à nous procurer des matériaux ou en participant à notre cagnotte sur HelloAsso !
+                    Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>. Si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont et seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. <strong>Il n'y aucun but lucratif à cette démarche</strong>. 
                 </div>
             </div>
             <div className={"Section"}>
