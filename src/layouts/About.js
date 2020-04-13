@@ -52,7 +52,7 @@ const About = (props) => (
                         JOGL - Open Covid Initiatives
                     </a></li>
                     <li><a className="Simple__Link" href="https://mailchi.mp/cce2c1470d1d/tiers-lieux-et-makers-face-au-covid-19" target="_blank" rel="noopener noreferrer">
-                        Liens vers d’autres initiatives et réseaux - Newsletter  «France Tiers Lieux» 09/04/2020
+                        Liens vers d’autres initiatives et réseaux - «France Tiers Lieux»
                     </a></li>
                 </ul>
                 <div className={"Section__Text"}>
