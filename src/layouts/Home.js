@@ -12,7 +12,9 @@ const Home = (props) => (
 
         <section className={'Home__Actions Actions'}>
 
-            <div className={'Section Section--Hoverable'}>
+            <div className={'Section Section--Hoverable Section--Horizontal'}>
+                <img className={'Section__Illustration'} alt={'Faire une demande'} src={'/illustrations/ask.png'} />
+                <div>
                     <h3 className={"Section__Title"}>
                         Vous avez des besoins en matériel ?
                     </h3>
@@ -27,8 +29,11 @@ const Home = (props) => (
                         </Button>
                     </div>
                 </div>
+            </div>
 
-            <div className={'Section Section--Hoverable'}>
+            <div className={'Section Section--Hoverable Section--Horizontal'}>
+                    <img className={'Section__Illustration'} alt={'Fabriquer'} src={'/illustrations/fab.png'}/>
+                    <div>
                         <h3 className={"Section__Title"}>
                             Vous voulez aider à produire  ?
                             </h3>
@@ -42,9 +47,12 @@ const Home = (props) => (
                                 </Link>
                             </Button>
                         </div>
+                    </div>
                 </div>
 
-            <div className={'Section Section--Hoverable'}>
+            <div className={'Section Section--Hoverable Section--Horizontal'}>
+                <img className={'Section__Illustration'} alt={'Aider'} src={'/illustrations/help.png'} />
+                <div>
                     <h3 className={"Secction__Title"}>
                         Vous voulez soutenir le collectif ?
                     </h3>
@@ -59,6 +67,7 @@ const Home = (props) => (
                         </Button>
                     </div>
                 </div>
+            </div>
 
         </section>
     

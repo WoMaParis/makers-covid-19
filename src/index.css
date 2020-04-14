@@ -105,6 +105,16 @@ a:hover{  opacity: 0.9 !important;  }
 .Section--Hoverable:hover::after{
     width: 100%;
 }
+.Section--Horizontal{
+    display: flex;
+    flex-direction: row;
+ }
+
+@media all and (max-width: 500px) {
+    .Section--Horizontal{
+        flex-direction: column;
+    }
+}
 
 .Section--CTA{
     display: flex;
