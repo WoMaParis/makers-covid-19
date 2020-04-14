@@ -6,7 +6,10 @@ const Hero = (props) => {
 
     const [milestones, setMilestones] = useState([]);
     const [Loading, setLoading] = useState(true);
+    const backgroundUrls = ['CC_HOMEMAKERS_1.jpg', 'CC_HOMEMAKERS5_Antoine.jpg','CC_VOLUMES_OLIVIA.png']
+    const backgroundUrl = backgroundUrls[Math.floor(Math.random() * Math.floor(backgroundUrls.length))]
 
+    
     useEffect(() => {
         const fetchData = async () => {
             let milestones = [];
@@ -51,6 +54,9 @@ const Hero = (props) => {
                 )}
 
             </ul>
+            <div className={`Hero__Backgrounds`}>
+                <img className={'Hero__Background'} alt={'Faire une demande'} src={`/images/${backgroundUrl}`} />
+            </div>
         </section>
 
     )

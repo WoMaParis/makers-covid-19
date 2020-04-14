@@ -1,18 +1,40 @@
 .Hero{
     justify-content: flex-end !important;
-    background-image: url("/images/Volumes.png");
-    background-size: cover;
-    background-position: center;
 }
-.Hero::before{
+.Hero > *{
+    position: relative;
+    z-index: 1;
+}
+
+.Hero__Backgrounds::before{
     background-color: rgba(255,255,255,0.4);
     content:"";
     position: absolute;
     display: block;
     bottom: 0; top: 0; left: 0; right: 0;
+    z-index: 1;
 }
-.Hero *{
-    position: relative;
+.Hero__Backgrounds{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.Hero__Background{
+        position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
 }
 
 

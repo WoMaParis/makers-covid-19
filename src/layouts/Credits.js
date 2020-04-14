@@ -66,8 +66,11 @@ const Credits = (props) => (
                     Crédits photos
                 </h3>
                 <ul className={"Section__List"}>
-                    <li>Photo page d'accueil par <a className={'Simple__Link'} href='https://volumesparis.org/' target="_self" rel="noopener noreferrer">
+                    <li>Photos page d'accueil par <a className={'Simple__Link'} href='https://volumesparis.org/' target="_self" rel="noopener noreferrer">
                         Volumes Coworking
+                    </a></li>
+                    <li>Photos page d'accueil par <a className={'Simple__Link'} href='https://www.homemakers.fr/' target="_self" rel="noopener noreferrer">
+                        HomeMakers
                     </a></li>
                 </ul>
             </div>
