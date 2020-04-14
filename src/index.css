@@ -85,12 +85,22 @@ a:hover{  opacity: 0.9 !important;  }
     border-bottom: solid 1px black;
     width: 1rem;
 }
-.Section--Hoverable{
+.Section__Illustration{
+    object-fit: contain;
+    transition: var(--transition-fast);
+}
+@media all and (max-width: 500px) { 
+    .Section:hover > .Section__Illustration{ transform: none; }
+}
+.Section:hover > .Section__Illustration{
+    transform: scale(1.1);
+}
+.Section.Section--Hoverable{
     position: relative;
     height: 100%;
     z-index: 0;
 }
-.Section--Hoverable::after{
+.Section.Section--Hoverable::after{
     content: '';
     position: absolute;
     display: block;
@@ -102,21 +112,44 @@ a:hover{  opacity: 0.9 !important;  }
     z-index: -1;
     transition: var(--transition-fast);
 }
-.Section--Hoverable:hover::after{
+.Section.Section--Hoverable:hover::after{
     width: 100%;
 }
-.Section--Horizontal{
+.Section.Section--Horizontal{
     display: flex;
     flex-direction: row;
  }
-
-@media all and (max-width: 500px) {
-    .Section--Horizontal{
-        flex-direction: column;
-    }
+.Section.Section--Horizontal > *:not(:first-child){
+    margin-left: 1rem;
 }
 
-.Section--CTA{
+.Section.Section--Vertical{
+    display: flex;
+    flex-direction: column;
+ }
+.Section.Section--Simple{
+    padding: 0;
+    border-top: 0;
+}
+.Section.Section--Center{
+justify-content: center;
+}
+.Section.Section--Stretch{
+justify-content: stretch;
+}
+
+@media all and (max-width: 500px) {
+    .Section.Section--Horizontal{
+        flex-direction: column;
+    }
+    .Section.Section--Horizontal > *:not(:first-child){
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+}
+
+.Section.Section--CTA{
     display: flex;
     flex-direction: row;
     justify-content: space-between;

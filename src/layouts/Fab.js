@@ -9,6 +9,7 @@ const Fab = (props) => (
     <Fragment>
         <section className={`Fab__Note`}>
             <div className={"Section"}>
+
                 <h2 className={"Section__Title"}>
                     Participer à la fabrication de matériel
                 </h2>
@@ -22,9 +23,9 @@ const Fab = (props) => (
                     <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
                 </div>
-                <div className={"Section"}>
-                <div className={'Profiles'}>
-                    <div className={'Profiles__Profile'}>
+                <div className={"Section Section--Horizontal Section-Stretc"}>
+                    <div className={'Section Section--Simple'}>
+                        <img className={'Section__Illustration'} alt={'Faire en atelier'} src={'/illustrations/fab_open.png'} />
                         <h3 className={"Section__Title"}>
                             Manufacture Ouverte
                         </h3>
@@ -38,21 +39,21 @@ const Fab = (props) => (
                             Pour plus d'informations contactez <a className={'Simple__Link'} href={'mailto:michael@volumesparis.org'}>@Michael</a>.
                         </div>
                     </div>
-                    <div className={'Profiles__Profile'}>
-                        <h3 className={"Section__Title"}>
-                            Manufacture@Maison
-                        </h3>
-                        <h4 className={"Section__Subtitle"}>
-                            Vous pouvez produire chez vous.
-                        </h4>
-                        <div className={"Section__Text"}>
-                            Vous avez votre propre équipement et vous voulez/pouvez contribuer en imprimant des pièces, assemblant des kits, cousant des masques ? Le mieux est d'utiliser la carte des lieux du collectif pour <strong>vous rattacher au lab le plus proche de chez vous </strong>! Contactez ensuite la personne référente pour voir comment vous organiser.
+                    <div className={'Section Section--Simple'}>
+                    <img className={'Section__Illustration'} alt={'Faire à la maison'} src={'/illustrations/fab_home.png'} />
+                            <h3 className={"Section__Title"}>
+                                Manufacture@Maison
+                            </h3>
+                            <h4 className={"Section__Subtitle"}>
+                                Vous pouvez produire chez vous.
+                            </h4>
+                            <div className={"Section__Text"}>
+                                Vous avez votre propre équipement et vous voulez/pouvez contribuer en imprimant des pièces, assemblant des kits, cousant des masques ? Le mieux est d'utiliser la carte des lieux du collectif pour <strong>vous rattacher au lab le plus proche de chez vous </strong>! Contactez ensuite la personne référente pour voir comment vous organiser.
+                            </div>
+                            <div className={"Section__Text"}>
+                                Pour être accompagné, contactez <a className={'Simple__Link'} href={'mailto:vincentguimas@gmail.com'}>@Vincent</a>.
+                            </div>
                         </div>
-                        <div className={"Section__Text"}>
-                            Pour être accompagné, contactez <a className={'Simple__Link'} href={'mailto:vincentguimas@gmail.com'}>@Vincent</a>.
-                        </div>
-                    </div>
-                </div>
             </div>
             <div className={"Section Section--CTA"}>
                 <h3 className={"Section__Title"}>

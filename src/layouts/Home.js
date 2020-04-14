@@ -14,7 +14,8 @@ const Home = (props) => (
 
             <div className={'Section Section--Hoverable Section--Horizontal'}>
                 <img className={'Section__Illustration'} alt={'Faire une demande'} src={'/illustrations/ask.png'} />
-                <div>
+                <div className={"Section Section--Simple Section--Vertical Section--Center"}>
+
                     <h3 className={"Section__Title"}>
                         Vous avez des besoins en matériel ?
                     </h3>
@@ -33,12 +34,12 @@ const Home = (props) => (
 
             <div className={'Section Section--Hoverable Section--Horizontal'}>
                     <img className={'Section__Illustration'} alt={'Fabriquer'} src={'/illustrations/fab.png'}/>
-                    <div>
+                <div className={"Section Section--Simple Section--Vertical Section--Center"}>
                         <h3 className={"Section__Title"}>
                             Vous voulez aider à produire  ?
                             </h3>
                         <div className={"Section__Text"}>
-                            Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Si vous ne présentez aucun symptôme et n'êtes pas malades. Rejoignez le slack de coordination pour contribuer à la production.
+                        Vous êtes un particulier, une entreprises ou une association située en Ile-de-France, et vous êtes équipés de machines de fabrication ? <strong>Découpeuses laser, imprimantes 3D, machines à coudres...</strong>. Si vous ne présentez à ce jour <a className={'Simple__Link Simple__Link--Inverted'} href={'https://www.maladiecoronavirus.fr'} target="_blank" target="_blank" rel="noopener noreferrer" > aucun symptôme de Covid-19</a> et si vous vous engagez à <strong>respecter les gestes barrières</strong>, rejoignez la fabrication.
                         </div>
                         <div className={"Section__Action"}>
                             <Button>
@@ -52,7 +53,8 @@ const Home = (props) => (
 
             <div className={'Section Section--Hoverable Section--Horizontal'}>
                 <img className={'Section__Illustration'} alt={'Aider'} src={'/illustrations/help.png'} />
-                <div>
+                <div className={"Section Section--Simple Section--Vertical Section--Center"}>
+
                     <h3 className={"Secction__Title"}>
                         Vous voulez soutenir le collectif ?
                     </h3>

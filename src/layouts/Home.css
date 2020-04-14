@@ -6,20 +6,11 @@
     width: 60%;
 }
 
-.Section__Illustration{
-    width: 30%;
-    height: auto;
-    object-fit: contain;
-    transition: var(--transition-fast);
-}
-.Section:hover .Section__Illustration{
-    transform: scale(1.1);
+.Home__Actions .Section__Illustration{
+    width: 25%;
 }
 @media all and (max-width: 500px) {
-    .Section__Illustration{
+    .Home__Actions .Section__Illustration{
         width: 50%;
-    }
-    .Section:hover .Section__Illustration{
-        transform: none;
     }
 }

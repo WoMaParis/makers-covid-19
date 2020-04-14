@@ -1,11 +1,19 @@
 .Help__Information{
-    width: 40%;
+    width: 50%;
 }
 .Help__HelloAsso{
-    width: 60%;
+    width: 50%;
     border: 0;
 }
 
+.Help__Information .Section__Illustration{
+    width: 25%;
+}
+@media all and (max-width: 500px) {
+    .Help__Information .Section__Illustration{
+        width: 50%;
+    }
+}
 @media all and (max-width: 1000px) {
 
     .Help__HelloAsso{

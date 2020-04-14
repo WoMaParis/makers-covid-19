@@ -32,6 +32,7 @@ const Credits = (props) => (
                     Site : <a className={'Simple__Link'} href='https://www.cloudflare.com/' target="_self" rel="noopener noreferrer">cloudflare.com/</a>
                 </div>
             </div>
+            
         </section>
         <section className={'Credits__Actions'}>
             <div className={'Section'}>

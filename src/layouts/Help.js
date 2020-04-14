@@ -6,19 +6,33 @@ import './Help.css'
 const Help = (props) => (
     <Fragment>
 
-    <section className={'Help__Information'}>
+        <section className={'Help__Information'}>
             <div className={"Section"}>
                 <h2 className={"Section__Title"}>
-                    Vous voulez faire un don ? 
+                    Vous voulez aider ?
                 </h2>
                 <div className={"Section__Text"}>
-                    Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>. Si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont et seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. <strong>Il n'y aucun but lucratif à cette démarche</strong>. 
+                    Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>. Si vous voulez contribuer à l'effort, nous avons besoin de matières premières et de sous pour financer nos achats. <strong>Il n'y aucun but lucratif à cette démarche</strong>.
                 </div>
             </div>
-            <div className={"Section"}>
-                <h2 className={"Section__Title"}>
-                    Vous avez accès à des matières premières ?
-                </h2>
+
+            <div className={'Section Section--Hoverable Section--Horizontal'}>
+                <img className={'Section__Illustration'} alt={'Don financier'} src={'/illustrations/help_financial.png'} />
+                <div className={"Section Section--Simple Section--Vertical Section--Center"}>                
+                    <h3 className={"Section__Title"}>
+                        Faire un don.
+                    </h3>
+                    <div className={"Section__Text"}>
+                        Si vous voulez faire un don, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont et seront utilisées <strong>pour rembourser les achats de matières premières et autres dépenses de la communauté </strong>.
+                    </div>
+                </div>
+            </div>
+            <div className={'Section Section--Hoverable Section--Horizontal'}>
+                <img className={'Section__Illustration'} alt={'Don materiel'} src={'/illustrations/help_materials.png'} />
+                <div className={"Section Section--Simple Section--Vertical Section--Center"}> 
+                <h3 className={"Section__Title"}>
+                    Proposer des matières premières.
+                </h3>
                 <div className={"Section__Text"}>
                     Nous avons besoin de <strong>matières premières</strong>, pour continuer la fabrication. Pour la production des visières, des masques et autres matériels nous cherchons :
                 </div>
@@ -30,13 +44,17 @@ const Help = (props) => (
                     <li>De rouleaux 100% coton</li>
                     <li>De divers éléments : Elastiques de bureau, Elastiques de couture, Rivets plastiques</li>
                 </ul>
-                <div className={"Section__Action Section__Action--CTA"}>
-                    <Button>
-                        <a href="mailto://sarah@fabicty.paris">
-                            Contactez Sarah à sarah@fabcity.paris !
-                        </a>
-                    </Button>
                 </div>
+            </div>
+            <div className={"Section Section--CTA"}>
+                <h3 className={"Section__Title"}>
+                    Contactez Sarah !
+                </h3>
+                <Button className={"Section__Action"}>
+                    <a href="mailto://sarah@fabicty.paris">
+                        Envoyer un mail
+                    </a>
+                </Button>
             </div>
         </section>
         <Iframe 
