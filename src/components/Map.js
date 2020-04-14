@@ -34,7 +34,13 @@ useEffect(() => {
 
     const close = () => { if (selection) setSelection({ selection: undefined }); };
 
-const onToggleHover = (cursor, { map }) => { map.getCanvas().style.cursor = cursor; }
+    const onToggleHover = (cursor, organisation, {type, map}) => {
+        console.log(map.transform._zoom);
+        
+    if (type === 'mouseenter' && map.transform._zoom > 10) setSelection({ selection: organisation })
+    
+    map.getCanvas().style.cursor = cursor; 
+}
 
 const markerClick = (organisation) => {
     
@@ -62,8 +68,8 @@ return(
                         return (
                             <Feature
                                 key={i}
-                                onMouseEnter={onToggleHover.bind(this, 'pointer')}
-                                onMouseLeave={onToggleHover.bind(this, '')}
+                                onMouseEnter={onToggleHover.bind(this, 'pointer', item)}
+                                onMouseLeave={onToggleHover.bind(this, '', 'undefined')}
                                 onClick={markerClick.bind(this, item)}
                                 coordinates={item.coordinates}
                             />
