@@ -18,9 +18,9 @@ const About = (props) => (
         <section className={'Team'}>
 
             <div className={"Section"}>
-                <h2 className={"Section__Title"}>
-                    À propos du collectif Makers x Covid-19 Paris
-                </h2>
+                <h1 className={"Section__Title"}>
+                    À propos du collectif
+                </h1>
                 <div className={"Section__Text"}>
                     Le collectif <strong>Makers x Covid Paris</strong> fait partie des multiples initiatives qui sont nées sur le territoire pour pallier le manque de materiel sanitaire.
                     Le collectif s'est construit autour des initiatives portées par <a className={'Simple__Link '} href={'http://volumesparis.org/'} target="_blank" rel="noopener noreferrer">Volumes</a>, <a className={'Simple__Link'} href={'https://www.electrolab.fr/'} target="_blank" rel="noopener noreferrer">l'Electrolab</a> et l'<a className={'Simple__Link '} href={'https://www.atelierdesamis.fr/'} target="_blank" rel="noopener noreferrer">Atelier des Amis</a>. Très vite, les autres labs, mais aussi des partenaires publics et des fournisseurs se sont ralliés au mouvement.<br/>
@@ -29,9 +29,9 @@ const About = (props) => (
             </div>
 
             <div className={"Section Section--Emphasis"}>
-                <h3 className={"Section__Title"}>
+                <h2 className={"Section__Title"}>
                     Contacter les référent.e.s
-                </h3>
+                </h2>
                 <ul className={"Section__List"}>
                     <li><strong>Coordination Labs et @Maison: </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:michael@volumesparis.org'}>@Michael</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:vincentguimas@gmail.com'}>@Vincent</a> </li>
                     <li><strong>Production laser & 3d : </strong><a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:corentin@volumesparis.org'}>@Corentin</a> et <a className={'Simple__Link Simple__Link--Inverted'} href={'mailto:flo@atelierdesamis.fr'}>@Florence</a></li>
@@ -43,9 +43,9 @@ const About = (props) => (
             </div>
 
             <div className={"Section"}>
-                <h3 className={"Section__Title"}>
+                <h2 className={"Section__Title"}>
                     Les autres initiatives
-                </h3>
+                </h2>
                 <div className={"Section__Text"}>
                     Coordination des projets
                 </div>

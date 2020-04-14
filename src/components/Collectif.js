@@ -29,9 +29,9 @@ const Collectif = () => {
 
   return (
     <section className={`Collectif Section ${loading ? 'Collectif--Loading' : ''}`}>
-        <h3 className={"Section__Title"}>
+        <h2 className={"Section__Title"}>
           Le Collectif
-        </h3>
+        </h2>
       <div className={`Collectif__Members Section__Text`}>
 
         {organisations.map((el, i) => {

@@ -13,16 +13,11 @@ const Menu = (props) => {
     return(
         <nav className={`${typeof (props.className) !== 'undefined' ? props.className : ''} ${menuOpen ? 'Menu--Open' : ''} Menu`}>
             <div to="/" className={`Menu__Link Link`}>
-                <h1 className="Link__Title Link--Desktop">
+                <div className="Link__Title Link--Desktop">
                     <Link to="/" onClick={() => { setMenuOpen(false) }}>
                         MakersCovid.paris
                     </Link>
-                </h1>
-                <h1 className="Link__Title Link--Mobile">
-                    <Link to="/" onClick={() => { setMenuOpen(false) }}>
-                        MxC.paris
-                    </Link>
-                </h1>
+                </div>
                 <div className="Link__Description">
                     Makerscovid.paris fabrique du materiel sanitaire d’urgence pour l’île de france. 
                 </div>

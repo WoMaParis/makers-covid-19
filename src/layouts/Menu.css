@@ -127,7 +127,7 @@
 .MobileToggle, .Link--Mobile{     display: none; }
 @media all and (max-width: 1000px) { 
     .MobileToggle, .Link--Mobile{display: unset;} 
-    .Link--Desktop{display: none;}
+    /* .Link--Desktop{display: none;} */
 }
 
 @media all and (max-width: 1000px) { 

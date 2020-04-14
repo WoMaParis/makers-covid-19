@@ -18,9 +18,9 @@ const Fab = (props) => (
         <section className={`Fab__Note`}>
             <div className={"Section"}>
 
-                <h2 className={"Section__Title"}>
+                <h1 className={"Section__Title"}>
                     Participer à la fabrication de matériel
-                </h2>
+                </h1>
                 <div className={"Section__Text"}>
                     Si vous ne présentez à ce jour <a className={'Simple__Link '} href={'https://www.maladiecoronavirus.fr'} target="_blank" rel="noopener noreferrer" > aucun symptôme de Covid-19</a> et si vous vous engagez à <strong>respecter les gestes barrières</strong>. Rejoignez le collectif afin de :
                 </div>
@@ -34,9 +34,9 @@ const Fab = (props) => (
                 <div className={"Section Section--Horizontal Section-Stretch"}>
                     <div className={'Section Section--Simple'}>
                         <img className={'Section__Illustration'} alt={'Faire en atelier'} src={'/illustrations/fab_open.png'} />
-                        <h3 className={"Section__Title"}>
+                        <h2 className={"Section__Title"}>
                             Manufacture Ouverte
-                        </h3>
+                        </h2>
                         <h4 className={"Section__Subtitle"}>
                             Vous faites partie d'un espace de fabrication.
                         </h4>
@@ -49,9 +49,9 @@ const Fab = (props) => (
                     </div>
                     <div className={'Section Section--Simple'}>
                     <img className={'Section__Illustration'} alt={'Faire à la maison'} src={'/illustrations/fab_home.png'} />
-                            <h3 className={"Section__Title"}>
+                            <h2 className={"Section__Title"}>
                                 Manufacture@Maison
-                            </h3>
+                            </h2>
                             <h4 className={"Section__Subtitle"}>
                                 Vous pouvez produire chez vous.
                             </h4>

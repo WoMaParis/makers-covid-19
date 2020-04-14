@@ -6,8 +6,10 @@ import Fab from './layouts/Fab.js';
 import Help from './layouts/Help.js';
 import About from './layouts/About.js';
 import Credits from './layouts/Credits.js';
+import { GiWorld } from 'react-icons/gi';
+import Ecosystem from './layouts/Ecosystem.js';
 import './App.css';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 
 const App = (props) => {
@@ -23,7 +25,9 @@ const App = (props) => {
           <Route path="/help" exact component={Help} />
           <Route path="/about" exact component={About} />
           <Route path="/credits" exact component={Credits} />
+          <Route path="/ecosystem" exact component={Ecosystem} />
       </main>
+        <Link className="Link__Ecosystem" to={'/ecosystem'}><GiWorld/></Link>
     </div>
     </Router>
 

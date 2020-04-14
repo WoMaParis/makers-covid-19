@@ -28,9 +28,9 @@ const Volunteers = () => {
 
   return (
     <section className={`Volunteers Section ${loading ? 'Volunteers--Loading' : ''}`}>
-      <h3 className={"Section__Title"}>
+      <h2 className={"Section__Title"}>
         Les Volontaires
-      </h3>
+      </h2>
       <div className={`Section__Text`}>
           {volunteers.map((el, i) => (<span key={i} className={'Volunteer'}>{el.name}, </span>))}
       </div>

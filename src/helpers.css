@@ -46,9 +46,6 @@
 }
 
 /* Section Contents */
-.Section__Text:not(:first-child){
-    margin-top: 1rem;
-}
 .Section__Subtitle{
     margin-top: -1rem;
     font-weight: 200;

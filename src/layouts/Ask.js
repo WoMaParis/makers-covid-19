@@ -18,9 +18,9 @@ const Ask = (props) => (
 
     <section className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Ask__Informations`}>
             <div className={"Section"}>
-                <h2 className={"Section__Title"}>
+                <h1 className={"Section__Title"}>
                     Demande de matériel matériel sanitaire
-                </h2>
+                </h1>
                 <div className={"Section__Text"}>
                     Même si nous faisons en sorte de produire du matériel de la meilleure qualité possible, <strong>le matériel que nous produisons n'est pas certifié, c'est une production d'urgence</strong>.
                 </div>
@@ -35,9 +35,9 @@ const Ask = (props) => (
 
             </div>
             <div className={"Section"}>
-                <h3 className={"Section__Title"}>
+                <h2 className={"Section__Title"}>
                     Matériels produits et capacités
-                </h3>
+                </h2>
                 <div className={"Section__Text"}>
                     Aujourd'hui nous sommes en capacité de produire :
             </div>
