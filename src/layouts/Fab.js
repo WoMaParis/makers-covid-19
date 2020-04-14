@@ -14,7 +14,7 @@ const Fab = (props) => (
                     Participer à la fabrication de matériel
                 </h2>
                 <div className={"Section__Text"}>
-                    Si vous ne présentez à ce jour <a className={'Simple__Link Simple__Link--Inverted'} href={'https://www.maladiecoronavirus.fr'} target="_blank" rel="noopener noreferrer" > aucun symptôme de Covid-19</a> et si vous vous engagez à <strong>respecter les gestes barrières</strong>. Rejoignez le collectif afin de :
+                    Si vous ne présentez à ce jour <a className={'Simple__Link '} href={'https://www.maladiecoronavirus.fr'} target="_blank" rel="noopener noreferrer" > aucun symptôme de Covid-19</a> et si vous vous engagez à <strong>respecter les gestes barrières</strong>. Rejoignez le collectif afin de :
                 </div>
                 <ul className={"Section__List"}>
                     <li>Centraliser les besoins pour pouvoir y répondre collectivement</li>

@@ -44,6 +44,10 @@
 .mapboxgl-popup-content .Illustration.Illustration--Photo{
     object-fit: cover;
 }
+
+.mapboxgl-popup-content .Section__Title{
+    margin-right: 2rem;
+}
 .mapboxgl-popup-content .Section__Text{
     line-height: 1.1;
     margin-top: 0;
@@ -63,7 +67,7 @@
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip{ border-top-color: black !important;}
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip{ border-bottom-color: black !important;}
 
-.Tools{
+.Section.Tools{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -80,7 +84,7 @@
     width: 100%;
     text-align: center;
     font-size: 1.3rem;
-    font-family: 'Open_Sans_xb', sans-serif;
+    font-weight: 900;
 }
 
 .Tool__Icon{
@@ -90,7 +94,7 @@
 }
 
     .Close__Button { 
-        z-index: 100;
+        z-index: 100    ;
         cursor: pointer;
         position: absolute;
         right: 0.5rem;

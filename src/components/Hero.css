@@ -26,7 +26,7 @@
     overflow: hidden;
 }
 .Hero__Background{
-        position: absolute;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -35,13 +35,17 @@
     object-fit: cover;
     object-position: center;
     height: 100%;
+    transition: var(--transition-fast);
+}
+.Hero:hover .Hero__Background{
+    transform: scale(1.1);
 }
 
 
 .Hero__Title{
     font-size: 2.3rem;
     line-height: 1.1;
-    font-family: "Open_Sans_xb", sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
     padding: var(--gap-size);
     margin: 0;
@@ -50,7 +54,7 @@
 .Hero__Subtitle{
     font-size: 1.5rem;
     line-height: 1.1;
-    font-family: "Open_Sans_b", sans-serif;
+    font-weight: 700;
     text-transform: uppercase;
     padding: var(--gap-size);
     margin: 0;
@@ -76,13 +80,20 @@
 .Milestone{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: flex-start;
     text-transform: uppercase;
     font-size: 1.3rem;
+}
+.Milestone > *{
+    height: fit-content;
 }
 .Milestone__Number{
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 2rem;
-    font-family: "Open_Sans_xb", sans-serif;
+    font-weight: 900;
+}
+.Milestone__Descriptif{
+    font-weight: 700;
 }

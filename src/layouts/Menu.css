@@ -24,7 +24,7 @@
     margin: 0;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-family: "Open_Sans_b", sans-serif;
+    font-weight: 700;
     color: black;
 }
 
@@ -44,11 +44,11 @@
 .Link:first-child .Link__Title{
     font-size: 1.8rem;
     padding-right: 5rem;
-    font-family: "Open_Sans_xb", sans-serif;
+    font-weight: 900;
 }
 .Link:first-child .Link__Description{
     line-height: 1.1;
-    font-family: "Open_Sans_b", sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
 
 }
@@ -249,7 +249,7 @@
     }
 
     
-    .MobileToggle__Close, .Close__Button {
+    .MobileToggle__Close{
         cursor: pointer;
         position: absolute;
         margin: auto auto;
@@ -261,9 +261,7 @@
         height: 0;
     }
     .MobileToggle__Close::before,
-    .MobileToggle__Close::after,
-    .Close__Button::after,
-    .Close__Button::before {
+    .MobileToggle__Close::after{
         position: absolute;
         content: '';
         display: block;
@@ -272,8 +270,7 @@
         height: var(--border-width);
         transform: rotate(45deg);
     }
-    .MobileToggle__Close::after,
-    .Close__Button::after {
+    .MobileToggle__Close::after {
         content: '';
         display: block;
         width: 100%;

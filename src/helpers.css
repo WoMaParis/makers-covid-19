@@ -51,7 +51,7 @@
 }
 .Section__Subtitle{
     margin-top: -1rem;
-    font-family: Open_Sans_l, sans-serif;
+    font-weight: 200;
     text-transform: unset;
 }
 .Section__Action{ margin-top: 1rem; }
@@ -81,7 +81,7 @@
 .Simple__Link{
     display: inline-block;
     position: relative;
-    font-family: 'Open_Sans_sb', sans;
+    font-weight: 700;
     z-index: 0;
 }
 .Simple__Link::before{
