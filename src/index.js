@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
 import './fonts.css';
+import './helpers.css';
+import './baseStyles.css';
+import 'normalize.css';
 
 ReactDOM.render(
     <App />,

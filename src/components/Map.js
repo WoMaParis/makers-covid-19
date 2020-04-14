@@ -34,10 +34,8 @@ useEffect(() => {
 
     const close = () => { if (selection) setSelection({ selection: undefined }); };
 
-    const onToggleHover = (cursor, organisation, {type, map}) => {
-        console.log(map.transform._zoom);
-        
-    if (type === 'mouseenter' && map.transform._zoom > 10) setSelection({ selection: organisation })
+    const onToggleHover = (cursor, organisation, {type, map}) => {     
+    // if (type === 'mouseenter' && map.transform._zoom > 10) setSelection({ selection: organisation })
     
     map.getCanvas().style.cursor = cursor; 
 }
@@ -106,7 +104,7 @@ return(
                             )}
                             </div>
                     </div>
-                    <div className="Section Tools">
+                    <div className="Section Section--Horizontal Tools">
                         <span className="Tool">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
                         <span className="Tool">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>
                         <span className="Tool">{selection.selection.printer} <img className="Tool__Icon" src={'/icons/tools_3dPrinter.svg'} alt={'Imprimante 3D'}/></span>
@@ -119,6 +117,11 @@ return(
                             </Button>
                         </div>
                     )}
+                    <div 
+                    className="Close__Button" 
+                    onClick={close}>
+
+                    </div>
 
                     </Popup>
                 )}

@@ -23,7 +23,7 @@ const Fab = (props) => (
                     <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
                 </div>
-                <div className={"Section Section--Horizontal Section-Stretc"}>
+                <div className={"Section Section--Horizontal Section-Stretch"}>
                     <div className={'Section Section--Simple'}>
                         <img className={'Section__Illustration'} alt={'Faire en atelier'} src={'/illustrations/fab_open.png'} />
                         <h3 className={"Section__Title"}>

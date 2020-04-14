@@ -89,6 +89,34 @@
     height: 3.5rem;
 }
 
+    .Close__Button { 
+        z-index: 100;
+        cursor: pointer;
+        position: absolute;
+        right: 0.5rem;
+        padding-top: 0.5rem;
+        top: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .Close__Button::after,
+    .Close__Button::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: var(--border-width);
+        transform: rotate(45deg);
+    }
+    .Close__Button::after {
+        content: '';
+        display: block;
+        width: 100%;
+        transform: rotate(-45deg);
+    }
+
+
 @media all and (max-width: 1000px) {
 
     .Map{

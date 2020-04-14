@@ -249,7 +249,8 @@
     }
 
     
-    .MobileToggle__Close {
+    .MobileToggle__Close, .Close__Button {
+        cursor: pointer;
         position: absolute;
         margin: auto auto;
         left: 0;
@@ -260,7 +261,9 @@
         height: 0;
     }
     .MobileToggle__Close::before,
-    .MobileToggle__Close::after {
+    .MobileToggle__Close::after,
+    .Close__Button::after,
+    .Close__Button::before {
         position: absolute;
         content: '';
         display: block;
@@ -269,7 +272,8 @@
         height: var(--border-width);
         transform: rotate(45deg);
     }
-    .MobileToggle__Close::after {
+    .MobileToggle__Close::after,
+    .Close__Button::after {
         content: '';
         display: block;
         width: 100%;
