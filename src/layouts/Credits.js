@@ -55,6 +55,9 @@ const Credits = (props) => (
                     <li>
                         Motifs de fond par  <a className={'Simple__Link'} href='mailto:tibolouvet@gmail.com'>Thibaut Louvet</a>
                     </li>
+                    <li>
+                        Illustrations par  <a className={'Simple__Link'} href='mailto:mari3.b@gmail.com'>Marie Boussard</a>
+                    </li>
                 </ul>
             </div>
             <div className={'Section Section'}>
