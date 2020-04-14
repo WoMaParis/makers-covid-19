@@ -5,7 +5,7 @@
     width: 100vw;
     overflow: hidden;
     background-color: var(--color-accent);
-    background-image: url("/illustrations/CC_THIBAUT_LOUVET_BACKGROUND");
+    background-image: url("/illustrations/CC_THIBAUT_LOUVET_BACKGROUND.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
