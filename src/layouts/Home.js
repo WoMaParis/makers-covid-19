@@ -1,12 +1,21 @@
 import React, { Fragment } from 'react'
 import Hero from "../components/Hero.js"
 import Button from '../components/Button.js'
+import Favicon from '../components/Favicon.js'
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet"
+
 import './Home.css'
 
 const Home = (props) => (
 
 <Fragment>
+        <Favicon icon={'home'} />
+
+        <Helmet>
+            <title>Accueil | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="Les makers d'ile-de-france se mobilisent pour produire du matériel sanitaire d’urgence." />
+        </Helmet>
 
         <Hero className={'Home__Hero'} />
 

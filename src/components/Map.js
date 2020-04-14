@@ -113,7 +113,7 @@ return(
                     {selection.selection.websiteUrl && (
                         <div className={'Section--CTA'}>
                             <Button>
-                                <a href={selection.selection.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
+                                <a title={'Voir le site'} href={selection.selection.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
                             </Button>
                         </div>
                     )}

@@ -1,10 +1,18 @@
 import React, { Fragment } from 'react'
 import Iframe from 'react-iframe'
 import Button from '../components/Button.js'
+import Favicon from '../components/Favicon.js'
+import { Helmet } from "react-helmet"
 import './Help.css'
 
 const Help = (props) => (
     <Fragment>
+        <Favicon icon={'help'}/>
+
+        <Helmet>
+            <title>Donner | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="Aider le collectif en faisant un don financier ou en matiére premiere." />
+        </Helmet>
 
         <section className={'Help__Information'}>
             <div className={"Section"}>

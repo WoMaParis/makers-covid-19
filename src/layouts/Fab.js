@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react'
 import Map from '../components/Map.js'
 import Button from '../components/Button.js'
+import Favicon from '../components/Favicon.js'
+import { Helmet } from "react-helmet"
 import './Fab.css'
 
 const Fab = (props) => (
 
-
+    
     <Fragment>
+        <Favicon icon={'fab'} />
+        <Helmet>
+            <title>Fabriquer | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="Participer à la fabrication de meteriel, de chez vous ou à travers un réseau de lieus de fabrication." />
+        </Helmet>
+
         <section className={`Fab__Note`}>
             <div className={"Section"}>
 

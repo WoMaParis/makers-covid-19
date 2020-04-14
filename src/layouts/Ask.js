@@ -1,12 +1,20 @@
 import React, { Fragment } from 'react'
 import Iframe from 'react-iframe'
 import Button from '../components/Button.js'
+import Favicon from '../components/Favicon.js'
+import { Helmet } from "react-helmet"
 import { Link } from 'react-router-dom'
 import './Ask.css'
 
 const Ask = (props) => (
 
- <Fragment>
+    <Fragment>
+        <Favicon icon={'ask'} />
+
+        <Helmet>
+            <title>Demander | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="Faire une demande matériel sanitaire, visières, masques, blouse ou autre." />
+        </Helmet>
 
     <section className={`${typeof (props.className) !== 'undefined' ? props.className : ''} Ask__Informations`}>
             <div className={"Section"}>

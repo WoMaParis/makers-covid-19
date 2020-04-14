@@ -1,11 +1,19 @@
 import React, { Fragment } from 'react'
 import Collectif from '../components/Collectif.js'
+import Favicon from '../components/Favicon.js'
 import Volunteers from '../components/Volunteers.js'
+import { Helmet } from "react-helmet"
 import './About.css'
 
 const About = (props) => (
 
     <Fragment>
+        <Favicon icon={'about'} />
+
+        <Helmet>
+            <title>À propos | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="En savoir plus sur les membres du collectif, ses actions et ses infomations de contact." />
+        </Helmet>
 
         <section className={'Team'}>
 

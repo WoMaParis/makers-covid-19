@@ -1,11 +1,18 @@
 import React, { Fragment } from 'react'
 import Button from '../components/Button.js'
+import Favicon from '../components/Favicon.js'
+import { Helmet } from "react-helmet"
 import './Credits.css'
 
 const Credits = (props) => (
 
 <Fragment>
 
+        <Favicon icon={'credits'} />
+        <Helmet>
+            <title>Informations | Makers d'Ile-de-France contre le Covid-19.</title>
+            <meta name="description" content="Les conditions générales, les crédits et les informations sur les responable du site." />
+        </Helmet>
         <section className={'Credits__Actions'}>
             <div className={'Section'}>
                 <h2 className={"Section__Title"}>
