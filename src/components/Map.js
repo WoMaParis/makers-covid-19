@@ -96,13 +96,13 @@ return(
                                 </div>
                             )}
 
-                            {selection.selection.lead && selection.selection.type === 'Manufacture Ouverte' (
+                            {(selection.selection.lead && selection.selection.type === 'Manufacture Ouverte' ) ?  (
                                 <div className='Section__Text'>
                                     <a className={'Simple__Link'} href={`mailto:${selection.selection.mail}`} target="_self" rel='noopener noreferrer' >
                                         @{selection.selection.lead}
                                     </a>
                                 </div>
-                            )}
+                            ) : ''}
                             </div>
                     </div>
                     <div className="Section Section--Horizontal Tools">
