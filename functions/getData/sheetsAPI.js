@@ -67,6 +67,12 @@ const sheetsAPI = {
         const dataLabels = {// Define header labels for targeted data
             name: "Nom",
             mail: "Mail",
+            fab: 'Fabrication',
+            sewing: 'Couture',
+            coord: 'Coordination',
+            communication: 'Communication',
+            logistics: 'Livraison',
+            dev: 'Dev'
         }
         // Get Structured and filterd data
         let volunteers = await structureData( sheetLabel, dataLabels, param ); 

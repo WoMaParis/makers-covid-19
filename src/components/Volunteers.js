@@ -17,7 +17,8 @@ const Volunteers = () => {
       } catch (error) {
         console.log(error);
       };
-
+      console.log(volunteers);
+      
       setVolunteers(volunteers);
       setLoading(false);
     };
@@ -32,7 +33,9 @@ const Volunteers = () => {
         Les Volontaires
       </h2>
       <div className={`Section__Text`}>
-          {volunteers.map((el, i) => (<span key={i} className={'Volunteer'}>{el.name}, </span>))}
+          {volunteers.map((el, i) => (
+          <span key={i} className={'Volunteer ToolTip'} data-tooltip={`${el.fab === 'TRUE' ? '🔨' : ''}${el.sewing === 'TRUE' ? '🧵' : ''}${el.coord === 'TRUE' ? '📆‍' : ''}${el.logistics === 'TRUE' ? '🚲' : ''}${el.communication === 'TRUE' ? '💬' : ''}${el.dev === 'TRUE' ? '👩‍💻' : ''}`}>{el.name}, </span>
+          ))}
       </div>
     </section>
   )
