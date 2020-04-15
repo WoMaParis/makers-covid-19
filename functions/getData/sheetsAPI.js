@@ -87,6 +87,7 @@ const sheetsAPI = {
             lead: "Référent.e",
             mail: "Mail",
             type: "Type",
+            volunteers: "Bénévoles",
             laser: "Laser",
             cutter: "Cutter / Plotter",
             sewingMachine: "Machines à coudre",
