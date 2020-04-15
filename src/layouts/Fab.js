@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Map from '../components/Map.js'
 import Button from '../components/Button.js'
 import Favicon from '../components/Favicon.js'
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Helmet } from "react-helmet"
 import './Fab.css'
 
@@ -31,7 +32,7 @@ const Fab = (props) => (
                     <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
                 </div>
-                <div className={"Section Section--Horizontal Section-Stretch"}>
+                <div className={"Section Section--Horizontal Section-JStretch"}>
                     <div className={'Section Section--Simple'}>
                         <img className={'Section__Illustration'} alt={'Faire en atelier'} src={'/illustrations/fab_open.png'} />
                         <h2 className={"Section__Title"}>
@@ -63,13 +64,13 @@ const Fab = (props) => (
                             </div>
                         </div>
             </div>
-            <div className={"Section Section--CTA"}>
+            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal"}>
                 <h3 className={"Section__Title"}>
                     Rejoignez la conversation !
                 </h3>
                 <Button className={'Section__Action'}>
                     <a href="https://join.slack.com/t/fabcityparis/shared_invite/zt-d8nqbwf8-4jAaXrZabzZhrll_xD7kNQ" target="_blank" rel="noopener noreferrer">
-                        Le Slack de coordination
+                        Le Slack de coordination  <IoIosArrowRoundForward />
                     </a>
                 </Button>
             </div>

@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react'; 
 import Button from '../components/Button';
 import { MdInfo } from 'react-icons/md';
+import { AiOutlineMail } from 'react-icons/ai';
 import {Link, withRouter} from 'react-router-dom';
 import './Menu.css';
 
@@ -24,7 +25,7 @@ const Menu = (props) => {
                     
                 <Button className="Link__CTA Button--Inverted">
                     <Link to="/about" onClick={() => { setMenuOpen(false) }} >
-                        Nous contacter !
+                        Nous contacter ! <AiOutlineMail/>
                     </Link>
                 </Button>
             </div>

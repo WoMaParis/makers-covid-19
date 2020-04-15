@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Hero from "../components/Hero.js"
 import Button from '../components/Button.js'
 import Favicon from '../components/Favicon.js'
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet"
 
@@ -34,7 +35,7 @@ const Home = (props) => (
                     <div className={"Section__Action"}>
                         <Button>
                             <Link to="/ask" >
-                                Faire une demande de materiel.
+                                Faire une demande de materiel. <IoIosArrowRoundForward />
                             </Link>
                         </Button>
                     </div>
@@ -53,7 +54,7 @@ const Home = (props) => (
                         <div className={"Section__Action"}>
                             <Button>
                                 <Link to="/fab">
-                                    Rejoindre le collectif !
+                                Rejoindre le collectif ! <IoIosArrowRoundForward/>
                                 </Link>
                             </Button>
                         </div>
@@ -73,7 +74,7 @@ const Home = (props) => (
                     <div className={"Section__Action"}>
                         <Button>
                             <Link to="/help">
-                                Voir comment aider.
+                                Voir comment aider. <IoIosArrowRoundForward />
                             </Link>
                         </Button>
                     </div>

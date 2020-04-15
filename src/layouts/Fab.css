@@ -8,6 +8,7 @@
 
 .Section.Section--Simple{
     width: 100%;
+    justify-content: start;
 }
 .Fab__Note .Section__Illustration{
     width: 50%;

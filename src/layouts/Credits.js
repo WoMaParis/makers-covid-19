@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Button from '../components/Button.js'
 import Favicon from '../components/Favicon.js'
+import { IoLogoGithub } from 'react-icons/io';
 import { Helmet } from "react-helmet"
 import './Credits.css'
 
@@ -98,13 +99,13 @@ const Credits = (props) => (
                     </a></li>
                 </ul>
             </div>
-            <div className={'Section Section--CTA'}>
+            <div className={'Section Section--Emphasis Section--ICenter Section--Horizontal'}>
                 <h3 className={"Section__Title"}>
                     Ce site est open-source
                 </h3>
                 <Button className={'Section__Action'}>
                     <a href="https://github.com/WoMaParis/makers-covid-19" target="_blank" rel="noopener noreferrer">
-                        Voir le code source
+                        Voir le code source <IoLogoGithub/>
                 </a>
                 </Button>
             </div>

@@ -7,11 +7,16 @@
 .Button a{
     display: block;
     padding: 1rem;
+    line-height: 1.1;
     font-size: 1rem;
     text-align: center;
     font-weight: 900;
     position: relative;
     z-index: 100;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
 }
 .Button::after{
     content: '';
@@ -24,11 +29,19 @@
     transition: var(--transition-fast);
     z-index: 1;
 }
-.Button a:hover {
-    opacity: 1 !important;
+.Button a:hover { opacity: 1 !important; }
+.Button:hover::after{ width: 0; }
+
+.Button svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: var(--transition-fast);
+    transform: translateX(0rem);
 }
-.Button:hover::after{
-    width: 0;
+.Button:hover svg{
+    transform: translateX(0.5rem);
 }
 
 /* Inverted */

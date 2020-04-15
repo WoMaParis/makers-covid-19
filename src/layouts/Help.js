@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Iframe from 'react-iframe'
 import Button from '../components/Button.js'
 import Favicon from '../components/Favicon.js'
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Helmet } from "react-helmet"
 import './Help.css'
 
@@ -54,13 +55,13 @@ const Help = (props) => (
                 </ul>
                 </div>
             </div>
-            <div className={"Section Section--CTA"}>
+            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal"}>
                 <h3 className={"Section__Title"}>
                     Contactez Sarah !
                 </h3>
                 <Button className={"Section__Action"}>
                     <a href="mailto://sarah@fabicty.paris">
-                        Envoyer un mail
+                        Envoyer un mail <IoIosArrowRoundForward/>
                     </a>
                 </Button>
             </div>

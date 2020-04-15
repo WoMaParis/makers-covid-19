@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactMap, { Layer, Feature, Popup, ZoomControl } from 'react-mapbox-gl';
 import Button from './Button.js'
 import './Map.css'
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const MapBox = ReactMap({ accessToken: process.env.REACT_APP_MAPBOX_TOKEN });
 
@@ -81,11 +82,11 @@ return(
                         coordinates={selection.selection.coordinates}
                         maxWidth={"300px"}
                     >
-                        <div className="Section Map__Informations">
+                    <div className="Section Section--Horizontal Map__Informations">
                             {selection.selection.logoUrl && (
                             <img className={`Illustration ${selection.selection.type === "Manufacture@Maison" ? 'Illustration--Photo' : '' }`} src={selection.selection.logoUrl} alt="illustration" />
                             )}
-                            <div className=''>
+                        <div className='Section  Section--Simple'>
                                 <h3 className='Section__Title'>{selection.selection.name}</h3>
                                 <div className='Section__Subtitle'>{selection.selection.type}</div>
 
@@ -104,16 +105,16 @@ return(
                             )}
                             </div>
                     </div>
-                    <div className="Section Tools">
+                    <div className="Section Section--Horizontal Tools">
                         <span className="Tool">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
                         <span className="Tool">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>
                         <span className="Tool">{selection.selection.printer} <img className="Tool__Icon" src={'/icons/tools_3dPrinter.svg'} alt={'Imprimante 3D'}/></span>
                         <span className="Tool">{selection.selection.sewingMachine} <img className="Tool__Icon" src={'/icons/tools_SewingMachine.svg'} alt={'Machine à coudre'}/></span>
                     </div>
                     {selection.selection.websiteUrl && (
-                        <div className={'Section--CTA'}>
+                        <div className={'Section__Action'}>
                             <Button>
-                                <a title={'Voir le site'} href={selection.selection.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site</a>
+                                <a title={'Voir le site'} href={selection.selection.websiteUrl} rel='noopener noreferrer' target='_blank' >Voir le site <IoIosArrowRoundForward /> </a>
                             </Button>
                         </div>
                     )}

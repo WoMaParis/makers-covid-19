@@ -3,6 +3,7 @@ import Iframe from 'react-iframe'
 import Button from '../components/Button.js'
 import Favicon from '../components/Favicon.js'
 import { Helmet } from "react-helmet"
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { Link } from 'react-router-dom'
 import './Ask.css'
 
@@ -51,13 +52,13 @@ const Ask = (props) => (
                     Le matériel est fourni à <strong>titre gracieux par le collectif</strong>, grâce aux efforts de tous les membres, particuliers, entreprises et associations. <strong>Si vous souhaitez aider le collectif, vous pouvez faire un don</strong>.
                 </div>
             </div>
-            <div className={"Section Section--CTA"}>
+            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal"}>
                 <h3 className={"Section__Title"}>
                     Le collectif a besoin d'aide !
                 </h3>
                 <Button className={'Section__Action'}>
                     <Link to="/help" >
-                        Faire un don
+                        Faire un don <IoIosArrowRoundForward/>
                     </Link>
                 </Button>
             </div>

@@ -53,6 +53,7 @@ const structureData = async(sheetLabel, labels, filter = 'all') => {
                 return el.mail === filter;
             })
         } 
+        
         return body
     } catch (error) {
         console.log(error);
@@ -69,7 +70,7 @@ const sheetsAPI = {
         }
         // Get Structured and filterd data
         let volunteers = await structureData( sheetLabel, dataLabels, param ); 
-        
+
         // Shuffle array to display differnt peopel first
         return arrayShuffler(volunteers)
     },

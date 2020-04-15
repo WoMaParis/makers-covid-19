@@ -1,6 +1,15 @@
 
-.Section{ padding: var(--gap-size); display: flex; flex-direction: column; }
+.Section{ 
+    padding: var(--gap-size); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: left;
+}
 .Section:not(:first-child){  border-top : solid black var(--border-width) }
+
+.Section > *{ margin-top: 1rem; }
+.Section > *:first-child{ margin-top: 0; }
 
 /* Section Variations */
 .Section--Emphasis{ background-color: var(--color-accent-alt); }
@@ -23,21 +32,14 @@
     transition: var(--transition-fast);
 }
 
-.Section.Section--CTA{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-accent-alt);
-}
-.Section--CTA > *{ margin: 0; }
 .Section.Section--Hoverable:hover::after{ width: 100%; }
 .Section.Section--Horizontal{ flex-direction: row; }
+.Section.Section--Horizontal > *{ margin-top: 0 !important; margin-bottom: 0 !important; }
 .Section.Section--Horizontal > *:not(:first-child){ margin-left: 1rem; }
-.Section.Section--Vertical{ flex-direction: column; }
 .Section.Section--Simple{ padding: 0; border-top: 0; }
-.Section.Section--Center{ justify-content: center; }
-.Section.Section--Stretch{ justify-content: stretch; }
+.Section.Section--JCenter{ justify-content: center; }
+.Section.Section--JStretch{ justify-content: stretch; }
+.Section.Section--ICenter{ align-items: center; }
 
 @media all and (max-width: 500px) {
     .Section.Section--Horizontal{ flex-direction: column; }
@@ -46,13 +48,14 @@
 }
 
 /* Section Contents */
+.Section__Title{
+    margin-bottom: 0;
+}
 .Section__Subtitle{
-    margin-top: -1rem;
+    margin-top: 0rem;
     font-weight: 200;
     text-transform: unset;
 }
-.Section__Action{ margin-top: 1rem; }
-
 .Section__List li{
     margin-left: 1.5rem;
     position: relative;

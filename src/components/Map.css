@@ -28,6 +28,9 @@
     box-shadow: 0px 5px 5px #888888;
     border: var(--border-width) solid black;
 }
+.mapboxgl-map{
+    font-family: inherit !important ;
+}
 .mapboxgl-popup-content .Map__Informations{
     padding: 1rem;
     display: flex;
@@ -49,8 +52,7 @@
     margin-right: 2rem;
 }
 .mapboxgl-popup-content .Section__Text{
-    line-height: 1.1;
-    margin-top: 0;
+    line-height: 1.2;
 }
 .mapboxgl-popup-content .Button{
     width: 100%;
