@@ -137,8 +137,24 @@ const sheetsAPI = {
         }
         // return Structured and filtered data
         return await structureData(sheetLabel, dataLabels, param);
-    }
+    },
 
+    // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl
+    getModels: async (param = 'all') => {
+        const sheetLabel = "Modeles"; // Define name of the targeted sheet
+        const dataLabels = {// Define header labels for targeted data
+            name: "Nom",
+            imageURL: "ImageUrl",
+            state: "Status",
+            medical: "Medical",
+            note: "Note",
+            price: "Prix Coutant",
+            credits: "credit",
+            notice: "notice",
+        }
+        // return Structured and filtered data
+        return await structureData(sheetLabel, dataLabels, param);
+    },
 }
 
 module.exports = sheetsAPI

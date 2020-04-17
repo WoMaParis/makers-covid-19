@@ -1,0 +1,17 @@
+.Models_In_Prod{
+    width: 50%;
+}
+
+.Models_In_Research{
+    width: 50%;
+}
+
+
+img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+
+
