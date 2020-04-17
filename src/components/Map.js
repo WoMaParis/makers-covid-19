@@ -96,20 +96,21 @@ return(
                                 </div>
                             )}
 
-                            {selection.selection.lead && (
+                            {(selection.selection.lead && selection.selection.type === 'Manufacture Ouverte' ) ?  (
                                 <div className='Section__Text'>
                                     <a className={'Simple__Link'} href={`mailto:${selection.selection.mail}`} target="_self" rel='noopener noreferrer' >
                                         @{selection.selection.lead}
                                     </a>
                                 </div>
-                            )}
+                            ) : ''}
                             </div>
                     </div>
                     <div className="Section Section--Horizontal Tools">
-                        <span className="Tool">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
-                        <span className="Tool">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>
-                        <span className="Tool">{selection.selection.printer} <img className="Tool__Icon" src={'/icons/tools_3dPrinter.svg'} alt={'Imprimante 3D'}/></span>
-                        <span className="Tool">{selection.selection.sewingMachine} <img className="Tool__Icon" src={'/icons/tools_SewingMachine.svg'} alt={'Machine à coudre'}/></span>
+                        <span className="Tool ToolTip" data-tooltip="Volontaires">{selection.selection.volunteers} <img className="Tool__Icon" src={'/icons/tools_Volunteer.svg'} alt={'Volontaires'} /></span>
+                        <span className="Tool ToolTip" data-tooltip="Laser">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
+                        <span className="Tool ToolTip" data-tooltip="Cutter">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>
+                        <span className="Tool ToolTip" data-tooltip="Imprimante 3D">{selection.selection.printer} <img className="Tool__Icon" src={'/icons/tools_3dPrinter.svg'} alt={'Imprimante 3D'}/></span>
+                        <span className="Tool ToolTip" data-tooltip="Machines à coudre">{selection.selection.sewingMachine} <img className="Tool__Icon" src={'/icons/tools_SewingMachine.svg'} alt={'Machine à coudre'}/></span>
                     </div>
                     {selection.selection.websiteUrl && (
                         <div className={'Section__Action'}>

@@ -60,7 +60,13 @@ const Credits = (props) => (
                     <li>3D Printer par Cono Studio Milano sur <a className={'Simple__Link'} href='https://thenounproject.com/search/?q=3d%20printer&i=912171' target="_self" rel="noopener noreferrer">
                        the Noun Project
                     </a></li>
-                    <li>Vinyl cutter par <a className={'Simple__Link'} href='mailto:perchais.quentin@gmail.com'>Quentin Perchais</a></li>
+                    <li>
+                        Volunteer par Kieu Thi Kim Cuong sur <a className={'Simple__Link'} href='https://thenounproject.com/search/?q=volunteers&i=2876612' target="_self" rel="noopener noreferrer">
+                            the Noun Project
+                    </a></li>
+                    <li>
+                        Vinyl cutter par <a className={'Simple__Link'} href='mailto:perchais.quentin@gmail.com'>Quentin Perchais</a>
+                    </li>
                     <li>
                         Motifs de fond par  <a className={'Simple__Link'} href='mailto:tibolouvet@gmail.com'>Thibaut Louvet</a>
                     </li>
