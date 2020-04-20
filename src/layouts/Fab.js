@@ -60,7 +60,7 @@ const Fab = (props) => (
                                 Vous avez votre propre équipement et vous voulez/pouvez contribuer en imprimant des pièces, assemblant des kits, cousant des masques ? Le mieux est d'utiliser la carte des lieux du collectif pour <strong>vous rattacher au lab le plus proche de chez vous </strong>! Contactez ensuite la personne référente pour voir comment vous organiser.
                             </div>
                             <div className={"Section__Text"}>
-                                Pour être accompagné, contactez <a className={'Simple__Link'} href={'mailto:vincentguimas@gmail.com'}>@Vincent</a>.
+                        Pour être accompagné, contactez <a className={'Simple__Link'} href={'mailto:manufacture.maison@gmail.com'}>@Vincent</a>.
                             </div>
                         </div>
             </div>

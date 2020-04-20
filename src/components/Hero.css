@@ -71,7 +71,7 @@
 }
 
 .Milestone:not(:first-child){
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .Hero__Milestones--Loading{

@@ -158,6 +158,7 @@ const sheetsAPI = {
             price: "Prix Coutant",
             credits: "credit",
             notice: "notice",
+            file: "fichier",
         }
         // return Structured and filtered data
         return await structureData(sheetLabel, dataLabels, param);

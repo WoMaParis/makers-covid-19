@@ -35,8 +35,14 @@
 .Section.Section--Hoverable:hover::after{ width: 100%; }
 .Section.Section--Horizontal{ flex-direction: row; }
 .Section.Section--Horizontal > *{ margin-top: 0 !important; margin-bottom: 0 !important; }
+.Section.Section--Horizontal > *:not(:first-child){ 
+    margin-left: 1rem;
+    border-left : solid black var(--border-width);
+    border-top : 0;
+ }
 .Section.Section--Horizontal > *:not(:first-child){ margin-left: 1rem; }
-.Section.Section--Simple{ padding: 0; border-top: 0; }
+
+.Section.Section--Simple{ padding: 0; border-top: 0; border-left: 0  !important; }
 .Section.Section--JCenter{ justify-content: center; }
 .Section.Section--JStretch{ justify-content: stretch; }
 .Section.Section--ICenter{ align-items: center; }

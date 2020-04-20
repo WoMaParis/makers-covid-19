@@ -2,6 +2,26 @@
     width: 50%;
 }
 
+.Models_In_Prod .Section--Horizontal,
+.Models_In_Research .Section--Horizontal{
+    padding: 0;
+}
+
+@media all and (max-width: 500px) {
+    .Models_In_Prod .Section.Section--Horizontal, .Models_In_Research .Section.Section--Horizontal{ flex-direction: row !important; }
+    .Models_In_Prod .Section.Section--Horizontal > *:not(:first-child),.Models_In_Research .Section.Section--Horizontal > *:not(:first-child){ margin-top: 0; margin-left: 1rem;
+    }
+}
+.Models_In_Prod .Section--Horizontal > .Section,
+.Models_In_Research .Section--Horizontal > .Section {
+    width: 100%;
+    margin-left: 0 !important;
+}
+.Models_In_Prod .Section--Horizontal > .Section_Illustration,
+.Models_In_Research .Section--Horizontal > .Section_Illustration{
+    height: 100%;
+    min-height: 200px;
+}
 .Models_In_Research{
     width: 50%;
 }

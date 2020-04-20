@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/assets_sources
 
 # testing
 /coverage
@@ -21,3 +22,4 @@ getCoordinates.js
 
 # Local Netlify folder
 .netlify
+assets_sources/tools.ai
