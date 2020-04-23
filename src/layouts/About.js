@@ -15,9 +15,9 @@ const About = (props) => (
             <meta name="description" content="En savoir plus sur les membres du collectif, ses actions et ses infomations de contact." />
         </Helmet>
 
-        <section className={'Team'}>
+        <section className={'Team Section Section--Simple'}>
 
-            <div className={"Section"}>
+            <div className={"Section Section--Bordered"}>
                 <h1 className={"Section__Title"}>
                     À propos du collectif
                 </h1>
@@ -28,7 +28,7 @@ const About = (props) => (
                 </div>
             </div>
 
-            <div className={"Section Section--Emphasis"}>
+            <div className={"Section Section--Emphasis Section--Bordered"}>
                 <h2 className={"Section__Title"}>
                     Contacter les référent.e.s
                 </h2>
@@ -42,7 +42,7 @@ const About = (props) => (
                 </ul>
             </div>
 
-            <div className={"Section"}>
+            <div className={"Section Section--Bordered"}>
                 <h2 className={"Section__Title"}>
                     Les autres initiatives
                 </h2>
@@ -97,7 +97,7 @@ const About = (props) => (
             </div>
 
         </section>
-        <section className={'Organisations'}>
+        <section className={'Organisations Section Section--Simple'}>
             <Volunteers/>
             <Collectif/>
         </section>

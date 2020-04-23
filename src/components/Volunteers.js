@@ -28,7 +28,7 @@ const Volunteers = () => {
 
 
   return (
-    <section className={`Volunteers Section ${loading ? 'Volunteers--Loading' : ''}`}>
+    <div className={`Volunteers Section ${loading ? 'Volunteers--Loading' : ''}  Section--Bordered`}>
       <h2 className={"Section__Title"}>
         Les Volontaires
       </h2>
@@ -37,7 +37,7 @@ const Volunteers = () => {
           <span key={i} className={'Volunteer ToolTip'} data-tooltip={`${el.fab === 'TRUE' ? '🔨' : ''}${el.sewing === 'TRUE' ? '🧵' : ''}${el.coord === 'TRUE' ? '📆‍' : ''}${el.logistics === 'TRUE' ? '🚲' : ''}${el.communication === 'TRUE' ? '💬' : ''}${el.dev === 'TRUE' ? '👩‍💻' : ''}`}>{el.name}, </span>
           ))}
       </div>
-    </section>
+    </div>
   )
 }
 

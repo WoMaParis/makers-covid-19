@@ -14,7 +14,7 @@ const Credits = (props) => (
             <title>Informations | Makers d'Ile-de-France contre le Covid-19.</title>
             <meta name="description" content="Les conditions générales, les crédits et les informations sur les responable du site." />
         </Helmet>
-        <section className={'Credits__Actions'}>
+        <section className={'Credits__Actions Section Section--Simple'}>
             <div className={'Section'}>
                 <h1 className={"Section__Title"}>
                     Informations légales
@@ -42,8 +42,8 @@ const Credits = (props) => (
             </div>
             
         </section>
-        <section className={'Credits__Actions'}>
-            <div className={'Section'}>
+        <section className={'Credits__Actions Section Section--Simple'}>
+            <div className={'Section  Section--Bordered'}>
                 <h2 className={"Section__Title"}>
                     Crédits et propriété intellectuelle
                 </h2>
@@ -75,7 +75,7 @@ const Credits = (props) => (
                     </li>
                 </ul>
             </div>
-            <div className={'Section Section'}>
+            <div className={'Section Section Section--Bordered'}>
                 <h3 className={"Section__Title"}>
                     Crédits photos
                 </h3>
@@ -89,7 +89,7 @@ const Credits = (props) => (
                 </ul>
             </div>
 
-            <div className={'Section Section'}>
+            <div className={'Section Section Section--Bordered'}>
                 <h3 className={"Section__Title"}>
                     Services et Frameworks
                 </h3>
@@ -105,7 +105,7 @@ const Credits = (props) => (
                     </a></li>
                 </ul>
             </div>
-            <div className={'Section Section--Emphasis Section--ICenter Section--Horizontal'}>
+            <div className={'Section Section--Emphasis Section--ICenter Section--Horizontal Section--Bordered'}>
                 <h3 className={"Section__Title"}>
                     Ce site est open-source
                 </h3>

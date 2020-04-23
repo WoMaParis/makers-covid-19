@@ -1,5 +1,6 @@
 
 .Map{
+    height: 100%;
     overflow: hidden;
     position: relative
 }
@@ -69,13 +70,6 @@
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip{ border-top-color: black !important;}
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip{ border-bottom-color: black !important;}
 
-.Section.Tools{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-}
 
 .Tool{
     display: flex;

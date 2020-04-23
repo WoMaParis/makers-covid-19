@@ -117,6 +117,41 @@ const sheetsAPI = {
         // Shuffle array to display differnt peopel first
         return arrayShuffler(extendedOrganisations)
     },
+    // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl
+    getStocks: async (param = 'all') => {
+        const sheetLabel = "Structure"; // Define name of the targeted sheet
+        const dataLabels = {// Define header labels for targeted data
+            name: "Nom",
+            websiteUrl: "Site",
+            logoUrl: "Logo",
+            adress: "Adresse",
+            lead: "Référent.e",
+            mail: "Mail",
+            type: "Type",
+            volunteers: "Bénévoles",
+            shield: "Stock Visieres",
+            mask: "Stock Masques",
+            blouse: "Stock Blouses",
+            adaptor: "Stock Adaptateurs"
+        }
+        // Get Structured and filtered data
+        let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];
+
+        for (const organisation of organisations) {
+            // Get coordinates for each adress
+            let coordinates = [];
+            coordinates = await client.geocodeForward(organisation.adress !== null ? organisation.adress : "paris");
+            coordinates = coordinates.entity.features[0].center;
+
+            let extendedOrganisation = organisation;
+            extendedOrganisation.coordinates = coordinates;
+            extendedOrganisations.push(extendedOrganisation)
+        };
+
+        extendedOrganisations = extendedOrganisations.filter((el) => (el.mask > 0 || el.blouse > 0 || el.adaptor > 0 || el.shield > 0))
+        // Shuffle array to display differnt peopel first
+        return arrayShuffler(extendedOrganisations)
+    },
 
     // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl
     getOrders: async (param = 'all') => {

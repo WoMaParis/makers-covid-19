@@ -20,9 +20,9 @@ const Home = (props) => (
 
         <Hero className={'Home__Hero'} />
 
-        <section className={'Home__Actions Actions'}>
+        <section className={'Home__Actions Section Section--Simple Actions'}>
 
-            <div className={'Section Section--Hoverable Section--Horizontal'}>
+            <div className={'Section Section--Hoverable Section--Bordered Section--Horizontal'}>
                 <img className={'Section__Illustration'} alt={'Faire une demande'} src={'/illustrations/ask.png'} />
                 <div className={"Section Section--Simple Section--Vertical Section--Center"}>
 
@@ -42,7 +42,7 @@ const Home = (props) => (
                 </div>
             </div>
 
-            <div className={'Section Section--Hoverable Section--Horizontal'}>
+            <div className={'Section Section--Hoverable Section--Bordered Section--Horizontal'}>
                     <img className={'Section__Illustration'} alt={'Fabriquer'} src={'/illustrations/fab.png'}/>
                 <div className={"Section Section--Simple Section--Vertical Section--Center"}>
                         <h3 className={"Section__Title"}>
@@ -61,14 +61,14 @@ const Home = (props) => (
                     </div>
                 </div>
 
-            <div className={'Section Section--Hoverable Section--Horizontal'}>
+            <div className={'Section Section--Hoverable Section--Bordered Section--Horizontal'}>
                 <img className={'Section__Illustration'} alt={'Aider'} src={'/illustrations/help.png'} />
                 <div className={"Section Section--Simple Section--Vertical Section--Center"}>
 
                     <h3 className={"Secction__Title"}>
                         Vous voulez soutenir le collectif ?
                     </h3>
-                    <div className={"Section__text"}>
+                    <div className={"Section__Text"}>
                         Nous mettons tout cela en oeuvre <strong>gratuitement et bénévolement</strong>, donc si vous voulez contribuer à l'effort, nous avons mis en place une cagnotte sur helloasso. Les sommes récupérées sont/seront utilisées pour rembourser les achats de matières premières et autres dépenses de la communauté. Il n'y <strong>aucun but lucratif à cette démarche.</strong>
                     </div>
                     <div className={"Section__Action"}>

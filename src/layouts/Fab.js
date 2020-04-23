@@ -16,8 +16,8 @@ const Fab = (props) => (
             <meta name="description" content="Participer à la fabrication de meteriel, de chez vous ou à travers un réseau de lieus de fabrication." />
         </Helmet>
 
-        <section className={`Fab__Note`}>
-            <div className={"Section"}>
+        <section className={`Fab__Note Section Section--Simple`}>
+            <div className={"Section Section--Bordered"}>
 
                 <h1 className={"Section__Title"}>
                     Participer à la fabrication de matériel
@@ -32,7 +32,7 @@ const Fab = (props) => (
                     <li>Gagner du temps en partageant les apprentissages techniques ; matériaux, modèles...</li>
                 </ul>
                 </div>
-                <div className={"Section Section--Horizontal Section-JStretch"}>
+            <div className={"Fab__Profile Section Section--Horizontal Section-JStretch  Section--Bordered"}>
                     <div className={'Section Section--Simple'}>
                         <img className={'Section__Illustration'} alt={'Faire en atelier'} src={'/illustrations/fab_open.png'} />
                         <h2 className={"Section__Title"}>
@@ -64,7 +64,7 @@ const Fab = (props) => (
                             </div>
                         </div>
             </div>
-            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal"}>
+            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal  Section--Bordered Section--JSpaceBetween"}>
                 <h3 className={"Section__Title"}>
                     Rejoignez la conversation !
                 </h3>

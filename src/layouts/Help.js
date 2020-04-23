@@ -15,8 +15,8 @@ const Help = (props) => (
             <meta name="description" content="Aider le collectif en faisant un don financier ou en matiére premiere." />
         </Helmet>
 
-        <section className={'Help__Information'}>
-            <div className={"Section"}>
+        <section className={'Help__Information Section Section--Simple'}>
+            < div className={"Section Section--Bordered"}>
                 <h1 className={"Section__Title"}>
                     Vous voulez aider ?
                 </h1>
@@ -25,7 +25,7 @@ const Help = (props) => (
                 </div>
             </div>
 
-            <div className={'Section Section--Hoverable Section--Horizontal'}>
+        <div className={'Section Section--Hoverable Section--Horizontal Section--Bordered'}>
                 <img className={'Section__Illustration'} alt={'Don financier'} src={'/illustrations/help_financial.png'} />
                 <div className={"Section Section--Simple Section--Vertical Section--Center"}>                
                     <h2 className={"Section__Title"}>
@@ -36,7 +36,7 @@ const Help = (props) => (
                     </div>
                 </div>
             </div>
-            <div className={'Section Section--Hoverable Section--Horizontal'}>
+        <div className={'Section Section--Hoverable Section--Horizontal Section--Bordered'}>
                 <img className={'Section__Illustration'} alt={'Don materiel'} src={'/illustrations/help_materials.png'} />
                 <div className={"Section Section--Simple Section--Vertical Section--Center"}> 
                 <h2 className={"Section__Title"}>
@@ -55,7 +55,7 @@ const Help = (props) => (
                 </ul>
                 </div>
             </div>
-            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal"}>
+            <div className={"Section Section--Emphasis Section--ICenter Section--Horizontal  Section--Bordered Section--JSpaceBetween"}>
                 <h3 className={"Section__Title"}>
                     Contactez Sarah !
                 </h3>

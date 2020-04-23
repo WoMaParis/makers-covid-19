@@ -105,7 +105,7 @@ return(
                             ) : ''}
                             </div>
                     </div>
-                    <div className="Section Section--Horizontal Tools">
+                    <div className="Section Section--Horizontal Section--NoStack">
                         <span className="Tool ToolTip" data-tooltip="Volontaires">{selection.selection.volunteers} <img className="Tool__Icon" src={'/icons/tools_Volunteer.svg'} alt={'Volontaires'} /></span>
                         <span className="Tool ToolTip" data-tooltip="Laser">{selection.selection.laser} <img className="Tool__Icon" src={'/icons/tools_LaserCutter.svg'} alt={'Découpe Laser'}/></span>
                         <span className="Tool ToolTip" data-tooltip="Cutter">{selection.selection.cutter} <img className="Tool__Icon" src={'/icons/tools_VinylCutter.svg'} alt={'Découpe Vinyle'} /> </span>

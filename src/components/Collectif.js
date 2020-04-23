@@ -28,7 +28,7 @@ const Collectif = () => {
 
 
   return (
-    <section className={`Collectif Section ${loading ? 'Collectif--Loading' : ''}`}>
+    <div className={`Collectif Section ${loading ? 'Collectif--Loading' : ''} Section--Bordered`}>
         <h2 className={"Section__Title"}>
           Le Collectif
         </h2>
@@ -55,7 +55,7 @@ const Collectif = () => {
             )}
         )}
        </div>
-    </section>
+    </div>
 
   )
 }

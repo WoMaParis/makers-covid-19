@@ -36,8 +36,8 @@ const Models = () => {
                 <meta name="description" content="Les differents modèles de materiels produit par le collectif." />
             </Helmet>
 
-            <section className={`Models_In_Prod`}>
-                <div className={"Section"}>
+            <section className={`Section Section--Simple Models_In_Prod`}>
+                <div className={"Section Section---Bordered"}>
                     <h1 className={"Section__Title"}>
                     Modèles en production
                     </h1>  
@@ -49,9 +49,9 @@ const Models = () => {
                 {models.filter((el) => el.state === "Production").map((el, i) => {
     
                     return( 
-                        <div key={i} className={'Section Section--Horizontal'}>
+                        <div key={i} className={'Section Section--Horizontal Section--Bordered Section--Simple Section--NoStack'}>
                         {el.imageURL === null ? null : <img className={'Section_Illustration'} src={el.imageURL}/>}
-                        <div className="Section">
+                            <div className="Section Section--Bordered">
 
                             <h3 className={'Section__Title'}>{el.name}</h3>
                             <ul className={'Section__List'}>
@@ -79,8 +79,8 @@ const Models = () => {
 
             </section>
 
-            <section className={`Models_In_Research`}>
-                <div className={"Section"}>
+            <section className={`Models_In_Research Section Section--Simple`}>
+                <div className={"Section Section--Bordered"}>
                     <h1 className={"Section__Title"}>
                         Modèles en developpement
                     </h1>
@@ -92,9 +92,9 @@ const Models = () => {
                 {models.filter((el) => el.state === "Recherche").map((el, i) => {
 
                     return (
-                        <div key={i} className={'Section Section--Horizontal'}>
+                        <div key={i} className={'Section Section--Horizontal Section--Simple Section--Bordered Section--NoStack'}>
                             {el.imageURL === null ? null : <img className={'Section_Illustration'} src={el.imageURL} />}
-                            <div className="Section">
+                            <div className="Section Section--Bordered">
 
                                 <h3 className={'Section__Title'}>{el.name}</h3>
                                 <ul className={'Section__List'}>

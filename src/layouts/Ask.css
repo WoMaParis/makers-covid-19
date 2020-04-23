@@ -1,12 +1,24 @@
 .Ask__Informations{
     width: 50%;
 }
-.Ask__Form{
+.Ask__Actions{
     width: 50%;
-    border: 0 !important;
+}
+    .Ask__Form{
+    height: 100%;
+    border: 0;
+     }
+.StocksMap{
+    width: 50%;
 }
 
-
+.StocksList .Section__Illustration{
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+.StocksInformation{
+    width: 400px;
+}
 @media all and (max-width: 1000px) {
 
     .Ask__Form{

@@ -21,30 +21,14 @@ const App = (props) => {
       <Menu className={'Layout__Menu'}/>
       <main className={'Layout__Content'}>
         <Switch>
-          <Route exact path="/">
-            <Home />
-            </Route>
-            <Route path="/ask">
-              <Ask/>
-            </Route>
-            <Route path="/fab">
-              <Fab/>
-            </Route>
-            <Route path="/help">
-              <Help />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/credits">
-              <Credits />
-            </Route>
-            <Route path="/ecosystem">
-              <Ecosystem />
-            </Route>
-            <Route path="/models">
-              <Models />
-            </Route>
+          <Route exact path="/"><Home /></Route>
+            <Route path="/ask"> <Ask/></Route>
+            <Route path="/fab"> <Fab/></Route>
+            <Route path="/help"> <Help /></Route>
+            <Route path="/about"> <About /></Route>
+            <Route path="/credits"> <Credits /></Route>
+            <Route path="/ecosystem"> <Ecosystem /></Route>
+            <Route path="/models"> <Models /></Route>
         </Switch>
       </main>
         <Link className="Link__Ecosystem" to={'/ecosystem'}><GiWorld/></Link>
