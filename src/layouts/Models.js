@@ -50,7 +50,7 @@ const Models = () => {
     
                     return( 
                         <div key={i} className={'Section Section--Horizontal Section--Bordered Section--Simple Section--NoStack'}>
-                        {el.imageURL === null ? null : <img className={'Section_Illustration'} src={el.imageURL}/>}
+                            {el.imageURL === null ? null : <img alt={el.name}  className={'Section_Illustration'} src={el.imageURL}/>}
                             <div className="Section Section--Bordered">
 
                             <h3 className={'Section__Title'}>{el.name}</h3>
@@ -93,7 +93,7 @@ const Models = () => {
 
                     return (
                         <div key={i} className={'Section Section--Horizontal Section--Simple Section--Bordered Section--NoStack'}>
-                            {el.imageURL === null ? null : <img className={'Section_Illustration'} src={el.imageURL} />}
+                            {el.imageURL === null ? null : <img alt={el.name} className={'Section_Illustration'} src={el.imageURL} />}
                             <div className="Section Section--Bordered">
 
                                 <h3 className={'Section__Title'}>{el.name}</h3>
