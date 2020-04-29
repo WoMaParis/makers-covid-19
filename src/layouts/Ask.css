@@ -1,7 +1,7 @@
 .Ask__Informations, .Ask__Actions, .Ask__Orders, .Ask__Results, .StocksMap{
     width: 50%;
 }
-.Ask__Orders form{
+.AskOrders__Information{
     height: 100%;    
 }
 .Ask__Form{

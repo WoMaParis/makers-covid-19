@@ -72,7 +72,7 @@ const AskOrder = (props) => {
                     value="Voir mes demandes" 
                 />
             </form>
-            <div className={"Section Section--Bordered"}>
+            <div className={"Section Section--Bordered AskOrders__Information"}>
                 <h3 className={"Section__Title"}>
                         Comprendre les statuts
                 </h3>
