@@ -13,7 +13,7 @@ let client = new MapboxClient(process.env.REACT_APP_MAPBOX_TOKEN);
 
 
 // Organize the data according to the freezed rows, omly taking into account the last header
-const structureData = async(sheetLabel, labels, filter = 'all') => {
+const structureData = async(sheetLabel, labels) => {
     try {
         
         await doc.loadInfo(); // loads document properties and worksheets
@@ -46,13 +46,6 @@ const structureData = async(sheetLabel, labels, filter = 'all') => {
             for (let label of Object.keys(labels)){ value[label] = el[labels[label]] !== '' ? el[labels[label]] : null;}
             return value
         })
-        // Filter according to param if needed
-        if (filter !== 'all') {
-            body = body.filter((el) =>{
-                console.log(`${el.mail} === ${filter}`)
-                return el.mail === filter;
-            })
-        } 
         
         return body
     } catch (error) {
@@ -75,7 +68,7 @@ const sheetsAPI = {
             dev: 'Dev'
         }
         // Get Structured and filterd data
-        let volunteers = await structureData( sheetLabel, dataLabels, param ); 
+        let volunteers = await structureData( sheetLabel, dataLabels ); 
 
         // Shuffle array to display differnt peopel first
         return arrayShuffler(volunteers)
@@ -100,7 +93,7 @@ const sheetsAPI = {
             printer: "Imprimante 3D"
         }
         // Get Structured and filtered data
-        let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];
+        let organisations = await structureData(sheetLabel, dataLabels), extendedOrganisations = [];
 
         for (const organisation of organisations) {
             // Get coordinates for each adress
@@ -135,7 +128,7 @@ const sheetsAPI = {
             adaptor: "Stock Adaptateurs"
         }
         // Get Structured and filtered data
-        let organisations = await structureData(sheetLabel, dataLabels, param), extendedOrganisations = [];
+        let organisations = await structureData(sheetLabel, dataLabels), extendedOrganisations = [];
 
         for (const organisation of organisations) {
             // Get coordinates for each adress
@@ -161,11 +154,18 @@ const sheetsAPI = {
             date: "Horodateur",
             mail: "Adresse e-mail",
             lead: "GÉRÉ PAR",
+            leadContact: "CONTACT LEAD",
+            asked: "Quantité",
+            models: "Le matériel dont vous avez besoin",
             status: "STATUS PRODUCTION",
             produced: "PRODUCTION ACTUELLE"
         }
+        
         // return  Structured and filtered data
-        return await structureData(sheetLabel, dataLabels, param)
+        let orders = await structureData(sheetLabel, dataLabels)   
+        if(param !== 'all') orders = orders.filter((el) => el.mail === param)
+
+        return orders
     },
 
     // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl
@@ -178,7 +178,7 @@ const sheetsAPI = {
             unit: "Unités",
         }
         // return Structured and filtered data
-        return await structureData(sheetLabel, dataLabels, param);
+        return await structureData(sheetLabel, dataLabels);
     },
 
     // Returns an array of all the organisation listed on the 'Structure' Tab with names, websiteUrl, and logoUrl
@@ -196,7 +196,7 @@ const sheetsAPI = {
             file: "fichier",
         }
         // return Structured and filtered data
-        return await structureData(sheetLabel, dataLabels, param);
+        return await structureData(sheetLabel, dataLabels);
     },
 }
 

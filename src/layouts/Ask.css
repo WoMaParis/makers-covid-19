@@ -1,15 +1,22 @@
-.Ask__Informations{
+.Ask__Informations, .Ask__Actions, .Ask__Orders, .Ask__Results, .StocksMap{
     width: 50%;
 }
-.Ask__Actions{
-    width: 50%;
+.Ask__Orders form{
+    height: 100%;    
 }
-    .Ask__Form{
+.Ask__Form{
     height: 100%;
     border: 0;
-     }
-.StocksMap{
-    width: 50%;
+}
+.OrderState--0{background-color: #dcdcdc;}
+.OrderState--1{background-color: #fef6d3;}
+.OrderState--2{background-color: #95af4c;}
+.OrderState--3{background-color: #4caf50;}
+.Section.Ask__Results{
+    justify-content: flex-start;
+}
+.AskOrder__Order > .Section{
+    width: 100%;
 }
 
 .StocksList .Section__Illustration{

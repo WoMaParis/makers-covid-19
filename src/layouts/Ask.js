@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import { Route, Switch } from 'react-router-dom'
 import AskOptions from "../contents/AskOptions";
 import AskInformation from "../contents/AskInformation";
+import AskOrder from "../contents/AskOrder";
 import AskForm from "../contents/AskForm";
 import MapStocks from "../components/MapStocks";
 import './Ask.css'
@@ -30,7 +31,10 @@ const Ask = (props) => (
                 </section>
             </Route>
             <Route path="/ask/stocks" exact>
-                <MapStocks/>
+                <MapStocks />
+            </Route>
+            <Route path="/ask/order" exact>
+                <AskOrder />
             </Route>
             <Route path="/ask/form" exact>
                 <section className={`Ask__Actions Section Section--Simple`}>

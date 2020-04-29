@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 const AskInformation = (props) => (
     <Fragment>
         <div className={"Section Section--Bordered"}>
-                <h2 className={"Section__Title"}>
+            <h2 className={"Section__Title"}>
                 Matériels produits
-                    </h2>
+            </h2>
             <div className={"Section__Text"}>
                 Le matériel que nous produisons <strong>n'est pas certifié, c'est une production d'urgence</strong>. Nous faisons en sorte de fournir un matériel le plus adapté possible et validé par des medecins mais nous n'offrons aucunes garanties.
                 </div>

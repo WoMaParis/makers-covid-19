@@ -23,6 +23,7 @@
 }
 .Section--Loading, .Section--Loading::before{
     height: 100%;
+    z-index: 1;
 }
 /* Section Variations */
 .Section.Section--Emphasis{ background-color: var(--color-accent-alt); }
@@ -57,8 +58,9 @@
 
 @media all and (max-width: 500px) {
     .Section.Section--Horizontal:not(.Section--NoStack){ flex-direction: column; }
-    .Section.Section--Horizontal > *:not(:first-child){ margin-top: 1rem; margin-left: 0;
-    }
+    .Section.Section--Horizontal > *:not(:first-child){ margin-top: 1rem; margin-left: 0;}
+    .Section.Section--Horizontal > .Section--Bordered:not(:first-child){ border-left: 0px; border-top: solid black var(--border-width);}
+
 }
 
 /* Section Contents */

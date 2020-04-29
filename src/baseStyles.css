@@ -77,6 +77,22 @@ ul, ol{
 /* Selection styles */
 ::selection{ background-color:var(--color-accent-alt);background-blend-mode: multiply;color:black}
 input::selection,textarea::selection{background-color:rgba(100,100,100,.4);color:rgba(0,0,0,.87)}
+input{border: 0px; background: transparent;width: 100%;
+    display: block;
+    padding: 1rem;
+    line-height: 1.1;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+input:hover, input:active{background: var(--color-accent-alt);}
 
 /* Scrollbar styles */
 body ::-webkit-scrollbar{ -webkit-appearance:none;width:10px;height:10px}
