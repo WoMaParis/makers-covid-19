@@ -14,6 +14,8 @@ const Collectif = () => {
         organisations = await fetch('/.netlify/functions/getData?organisations=all');
         organisations = await organisations.json();
         organisations = organisations.filter((el, i) => (el.type !== 'Manufacture@Maison'))
+        console.log(organisations);
+        
 
       } catch (error) {
         console.log(error);

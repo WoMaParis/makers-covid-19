@@ -17,7 +17,6 @@ const Volunteers = () => {
       } catch (error) {
         console.log(error);
       };
-      console.log(volunteers);
       
       setVolunteers(volunteers);
       setLoading(false);

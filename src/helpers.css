@@ -5,6 +5,7 @@
     flex-direction: column; 
     align-items: left;
     position: relative;
+    height: auto;
 }
 .Section.Section--Horizontal{ flex-direction: row; }
 .Section--Simple{  padding: 0; }

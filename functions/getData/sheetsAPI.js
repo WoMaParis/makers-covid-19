@@ -39,7 +39,7 @@ const structureData = async(sheetLabel, labels) => {
             return row
         })
         // Filter results to cull empty rows
-        body = body.filter((el) => (el[headers[0]] !== ''));
+        body = body.filter((el) => (el[headers[0]] !== '' && el[headers[0]] !== null));
         // Map all rows to filtered data
         body = body.map((el) => {
             let value = {};
