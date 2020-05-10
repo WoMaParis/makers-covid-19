@@ -1,0 +1,29 @@
+
+.Modal:not(.Modal--Active){
+    display: none;
+}
+.Modal{
+    content: '';
+    display: block;
+    position: fixed !important;
+    background-color: #0d04f5bf;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.Modal__Content{
+    z-index: 100000;
+    height: fit-content !important;
+    width: 80vw;
+    max-width: 600px;
+    background: white;
+    margin: auto;
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: black solid var(--border-width);
+}

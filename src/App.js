@@ -9,6 +9,7 @@ import Ecosystem from './layouts/Ecosystem.js';
 import Credits from './layouts/Credits.js';
 import { GiWorld } from 'react-icons/gi';
 import Models from './layouts/Models.js';
+import Modal from './components/Modal.js';
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
@@ -21,8 +22,8 @@ const App = (props) => {
       <Menu className={'Layout__Menu'}/>
       <main className={'Layout__Content'}>
         <Switch>
-          <Route exact path="/"><Home /></Route>
-            <Route path="/ask"> <Ask/></Route>
+            <Route exact path="/"><Home /><Modal /></Route>
+            <Route path="/ask"> <Ask /><Modal /></Route>
             <Route path="/fab"> <Fab/></Route>
             <Route path="/help"> <Help /></Route>
             <Route path="/about"> <About /></Route>
