@@ -13,7 +13,7 @@ const Collectif = () => {
       try {
         organisations = await fetch('/.netlify/functions/getData?organisations=all');
         organisations = await organisations.json();
-        organisations = organisations.filter((el, i) => (el.type !== 'Manufacture@Maison'))
+        organisations = organisations.filter((el, i) => (el.type === 'Manufacture Ouverte'))
         console.log(organisations);
         
 

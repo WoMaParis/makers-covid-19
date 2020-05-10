@@ -33,7 +33,7 @@ const AskOrder = (props) => {
         };
 
         fetchData();
-    }, [search]);
+    }, [search, contact]);
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
